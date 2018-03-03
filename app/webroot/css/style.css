@@ -253,6 +253,32 @@ body {
     @media screen and (max-width: 767px) {
       .newsletter__left {
         font-size: 5vw; } }
+  .newsletter__link {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none; }
+  .newsletter__tab-list {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    padding: 10px 0; }
+    @media screen and (max-width: 767px) {
+      .newsletter__tab-list {
+        display: block;
+        width: 100%;
+        text-align: center; } }
+  .newsletter__tab {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .newsletter__tab {
+        display: inline-block;
+        width: 50%; } }
+
+.newsletter__link.newsletter__link--active {
+  color: #D3531A;
+  font-weight: 700; }
 
 .boxes__title {
   text-align: center;
@@ -320,3 +346,71 @@ body {
 .boxes__list-paragraph {
   display: block;
   padding-bottom: 5px; }
+
+.form {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  vertical-align: middle;
+  padding: 10px 0; }
+  @media screen and (max-width: 767px) {
+    .form {
+      display: block;
+      width: 100%;
+      text-align: center; } }
+  .form__input {
+    width: 70%;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px;
+    border: 1px solid #CCC; }
+  .form__button {
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px solid #D3531A;
+    padding: 8px;
+    outline: none;
+    background: #D3531A;
+    color: #ffffff; }
+
+.about-us {
+  display: inline-block;
+  margin-right: 5%;
+  width: 65%;
+  vertical-align: top;
+  padding: 40px 0; }
+  @media screen and (max-width: 767px) {
+    .about-us {
+      display: block;
+      width: 100%; } }
+  .about-us__title {
+    font-size: 25px;
+    padding-bottom: 25px;
+    font-weight: 700; }
+  .about-us__paragraph {
+    font-size: 16px;
+    padding-bottom: 20px; }
+
+.sidebar {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  padding: 40px 0; }
+  @media screen and (max-width: 767px) {
+    .sidebar {
+      display: block;
+      width: 100%;
+      padding: 0 0 40px; } }
+  .sidebar__list {
+    margin-bottom: 25px;
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px; }
+  .sidebar__list-title {
+    font-size: 20px;
+    padding-bottom: 15px; }
+  .sidebar__list-content {
+    font-size: 14px; }

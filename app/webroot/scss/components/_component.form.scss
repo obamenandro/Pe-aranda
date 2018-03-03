@@ -1,0 +1,34 @@
+.form {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    vertical-align: middle;
+    padding: 10px 0;
+
+    @media screen and (max-width: 767px ) {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__input {
+        width: 70%;
+        border-radius: 5px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 8px;
+        border: 1px solid #CCC;
+    }
+
+    &__button {
+        border-radius: 5px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border: 1px solid #D3531A;
+        padding: 8px;
+        outline: none;
+        background: #D3531A;
+        ;
+        color: #ffffff;
+    }
+}

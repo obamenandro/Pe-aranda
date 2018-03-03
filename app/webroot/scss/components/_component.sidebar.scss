@@ -1,0 +1,29 @@
+.sidebar {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 40px 0;
+
+    @media screen and (max-width: 767px ) {
+        display: block;
+        width: 100%;
+        padding: 0 0 40px;
+    }
+    
+    &__list {
+        margin-bottom: 25px;
+        background-color: #35424a;
+        color: #ffffff;
+        padding: 15px;
+        border-radius: 5px; 
+    }
+
+    &__list-title {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    &__list-content {
+        font-size: 14px;
+    }
+}

@@ -30,4 +30,39 @@
             font-size: 5vw;
         }
     }
+
+    &__link {
+        font-size: 25px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    &__tab-list {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        padding: 10px 0;
+        
+        @media screen and (max-width: 767px ) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    &__tab {
+        display: inline-block;
+        width: 25%;
+        vertical-align: middle;
+
+        @media screen and (max-width: 767px ) {
+            display: inline-block;
+            width: 50%;
+        }
+    }
+}
+
+.newsletter__link.newsletter__link--active {
+    color: #D3531A;
+    font-weight: 700;
 }
