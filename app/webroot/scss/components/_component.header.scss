@@ -1,48 +1,185 @@
+.header{
+  background: #35424a;
+  color: #ffffff;
+  padding: 30px 0;
+  border-bottom: #e8491d 3px solid; 
 
-header{
-    background: #35424a;
+  @media screen and (max-width: 767px ) {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    z-index: 2;
+  }
+    
+  &__link {
     color: #ffffff;
-    padding-top: 20px;
-    min-height: 65px;
-    border-bottom: #e8491d 3px solid; 
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
 
-      :hover {
-        color: #e8491d;
-        font-weight: bold;
-      }
+    @media screen and (max-width: 767px ) {
+      display: block;
+      font-size: 4vw;
+      padding: 13px 0;
     }
 
-    li {
-      float: left;
-      display: inline;
-      padding: 0 10px 0 25px;    
-    }   
-
-    #branding{
-      float: left;
-    }
-
-    h1 {
-      margin: 0
-    }
-
-    nav {
-      float: right;
-      margin-top: 10px;
-    }
-
-    .highlight,
-    .current a {
+    &:hover {
       color: #e8491d;
       font-weight: bold;
     }
+  }
 
-    .highlight1{
-      color: #ffffff;	
+  &__nav-list {
+    display: inline-block;
+    width: 16.66%;
+    padding: 0 10px;    
+    box-sizing: border-box;
+    text-align: center;
+
+    @media screen and ( max-width: 767px ) {
+      display: block;
+      width: 100%;
+      padding: 0;
     }
+  }   
+
+  &__branding{
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+
+    @media screen and (max-width: 767px ) {
+      width: 50%;
+    }
+  }
+
+  &__h1 {
+    margin: 0;
+    font-size: 25px;
+
+    @media screen and (max-width: 767px ) {
+      font-size: 5vw;
+    }
+  }
+
+  &__navigation {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: right;
+
+    @media screen and ( max-width: 767px ) {
+      display: none;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      text-align: left;
+      z-index: 2;
+      top: 71px;
+      background: #35424A;
+    }
+  }
+
+  &__highlight {
+    color: #e8491d;
+    font-weight: bold;
+  }
+
+  &__menu-container {
+    display: none;
+    @media screen and ( max-width: 767px ) {
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+      text-align: right;
+      padding-top: 8px;
+    }
+  }
+
+  &__menu-icon {
+    display: inline-block;
+    width: 43px;
+    height: 40px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+
+  &__menu-line {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #d3531a;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+
+    &:first-child {
+      top: 0px;
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      top: 12px;
+    }
+
+    &:nth-child(4) {
+      top: 24px;
+    }
+  }
+}
+
+.header__menu-icon.header__menu-icon--active {
+  .header__menu-line {
+    &:first-child {
+      top: 18px;
+      width: 0;
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+  }
+}
+
+.header__nav-list.header__nav-list--current {
+  .header__link {
+    color: #e8491d;
+    font-weight: bold;
+  }
 }

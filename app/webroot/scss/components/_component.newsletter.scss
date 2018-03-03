@@ -1,0 +1,33 @@
+.newsletter {
+    padding: 5px;
+    color: #ffffff;
+    background: #35424a;
+
+    &__center {
+        text-align: center;
+        font-size: 25px;
+        padding: 15px 0;
+
+        @media screen and (max-width: 767px ) {
+            font-size: 5vw;
+        }
+    }
+
+    &__highlight {
+        color: yellow;
+
+        @media screen and (max-width: 767px ) {
+            display: block;
+        }
+    }
+
+    &__left {
+        text-align: left;
+        font-size: 25px;
+        padding: 15px 0;
+
+        @media screen and (max-width: 767px ) {
+            font-size: 5vw;
+        }
+    }
+}

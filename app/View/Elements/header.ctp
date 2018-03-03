@@ -1,17 +1,37 @@
-<header>
+<header class="header">
 	<div class="container">
-		<div id="branding">
-			<h1><span class="highlight">Peñaranda</span> Website </h1>
+		<div class="header__branding">
+			<h1 class="header__h1">
+				<span class="header__highlight">Peñaranda</span> Website
+			</h1>
 		</div>
-		<nav>
+		<div class="header__menu-container">
+			<div class="header__menu-icon">
+				<span class="header__menu-line"></span>
+				<span class="header__menu-line"></span>
+				<span class="header__menu-line"></span>
+				<span class="header__menu-line"></span>
+			</div>
+		</div>
+		<nav class="header__navigation">
 			<ul>
-				<li class="current"><a href="/home">Home</a></li>
-				<li><a href="/home">Government</a></li>
-				<li ><a href="/history">Tourism</a></li>
-				<li><a href="/home">Services</a></li>
-				<li ><a href="/history">Gallery</a></li>
-				<li><a href="/about">About us</a></li>
+				<li class="header__nav-list header__nav-list--current">
+					<a class="header__link" href="/">Home</a>
+				</li>
+				<li class="header__nav-list"><a class="header__link" href="/home">Government</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/history">Tourism</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/home">Services</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/history">Gallery</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/about">About us</a></li>
 			</ul>
 		</nav>
 	</div>
 </header>
+<script>
+	$(document).ready(function(){
+		$('.header__menu-icon').click(function(){
+			$(this).toggleClass('header__menu-icon--active');
+			$('.header__navigation').slideToggle();
+		});
+	});
+</script>

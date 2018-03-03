@@ -4,3 +4,9 @@ body{
   margin: 0;
   background-color: #f4f4f4;
 }
+
+.main-content {
+  @media screen and ( max-width: 767px ) {
+    padding-top: 71px;
+  }
+}

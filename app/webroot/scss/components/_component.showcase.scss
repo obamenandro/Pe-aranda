@@ -1,0 +1,31 @@
+.showcase {
+    display: inline-flex;
+    width: 100%;
+    min-height: 74vh;
+    background: url('../images/events/a.png') no-repeat 0 0px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    text-align: center;
+    color: #ffffff;
+
+    @media screen and (max-width: 767px ) {
+        min-height: 20vh;
+    }
+
+    &__highlight {
+        font-size: 55px;
+
+        @media screen and (max-width: 767px ) {
+            font-size: 5vw;
+        }
+    }
+
+    &__paragraph {
+        font-size: 20px;
+
+        @media screen and (max-width: 767px ) {
+            font-size: 4vw;
+        }
+    }
+}

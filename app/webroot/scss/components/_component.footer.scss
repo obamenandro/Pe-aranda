@@ -1,7 +1,13 @@
-footer {
+.footer {
     padding: 20px;
-    margin-top: 20px;
     color: #FFFFFF;
     background-color: #E8491D;
     text-align: center;
+
+    &__image {
+        margin: 5px;
+        border-radius: 5px;
+        width: 30px;
+        height: auto;
+    }
 }

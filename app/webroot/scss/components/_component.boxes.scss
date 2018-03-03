@@ -1,0 +1,83 @@
+.boxes {
+
+    &__title {
+        text-align: center;
+        font-size: 25px;
+        padding: 40px 0 30px;
+        font-weight: 700;
+    }
+
+    &__list {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+        vertical-align: top;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+            padding: 10px 0;
+        }
+    }
+
+    &__list-image {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 1px;
+    }
+
+    &__list-h3 {
+        font-size: 18px;
+        font-weight: 700;
+        padding: 15px 10px;
+    }
+
+    &__list-paragraph {
+        font-size: 16px;
+    }
+
+    &__image-wrapper {
+        display: inline-block;
+        margin-right: 5%;
+        width: 45%;
+        vertical-align: middle;
+        padding: 35px 0;
+
+        @media screen and (max-width: 767px ) {
+            margin-right: 0; 
+            width: 100%;
+        }
+    }
+
+    &__image-description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+        padding: 35px 0;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+            padding: 0 0 35px;
+        }
+    }
+
+    &__image-info {
+        width: 100%;
+    }
+
+    &__image-title {
+        font-size: 22px;
+        font-weight: 700;
+        padding-bottom: 15px; 
+    }
+
+    &__list-offer {
+        font-size: 16px;
+    }
+
+    &__list-paragraph {
+        display: block;
+        padding-bottom: 5px;
+    }
+}

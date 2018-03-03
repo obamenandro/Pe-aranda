@@ -21,7 +21,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
-	<meta name="viewport" content="witdh=device-witdh">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="affordable and professional web design">
 	<meta name="keywords" content="web design, affordable web design, professional web design">
 	<meta name="author" content="Chris Rowel">
@@ -32,7 +32,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->meta('icon');
 		echo $this->fetch('meta');
 		echo $this->Html->css('style');
-		echo $this->fetch('script');
+		echo $this->Html->script('jquery-3.1.0.min');		
 	?>
 </head>
 <body>
