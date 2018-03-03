@@ -21,43 +21,28 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
+	<meta name="viewport" content="witdh=device-witdh">
+	<meta name="description" content="affordable and professional web design">
+	<meta name="keywords" content="web design, affordable web design, professional web design">
+	<meta name="author" content="Chris Rowel">
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		<?php echo 'Peñaranda'; ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
 		echo $this->fetch('meta');
-		echo $this->fetch('css');
+		echo $this->Html->css('style');
 		echo $this->fetch('script');
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'https://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Flash->render(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'https://cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
+	<?= $this->element('header'); ?>
+	
+	<div class="main-content">
+		<?= $this->fetch('content'); ?>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	
+	<?= $this->element('footer'); ?>
 </body>
 </html>
