@@ -1,9 +1,11 @@
 <header class="header">
 	<div class="container">
 		<div class="header__branding">
-			<h1 class="header__h1">
-				<span class="header__highlight">Peñaranda</span> Website
-			</h1>
+			<a href="/">	
+				<h1 class="header__h1">
+					<span class="header__highlight">Peñaranda</span> Website
+				</h1>
+			</a>
 		</div>
 		<div class="header__menu-container">
 			<div class="header__menu-icon">
