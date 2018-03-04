@@ -1,0 +1,41 @@
+.header-admin {
+    width: 100%;
+    font-size: 0;
+    padding: 10px 30px;
+    border-bottom: #e8491d 3px solid;
+    background-color: #35424a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+
+    &__logo {
+        font-size: 20px;
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        color: #ffffff;
+    }
+
+    &__logout {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+        text-align: right;
+    }
+
+    &__highlight {
+        color: #E8491D;
+        font-weight: 700;
+    }
+
+    &__button {
+        display: inline-block;
+        background-color: #E8491D;
+        border-radius: 3px;
+        border: 1px solid #E8491D;
+        padding: 7px 20px;
+        color: #ffffff;
+        font-size: 14px;
+    }
+}

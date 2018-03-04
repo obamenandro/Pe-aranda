@@ -29,6 +29,7 @@
 	Router::connect('/about-us', array('controller' => 'pages', 'action' => 'display', 'about-us'));
 	Router::connect('/alcaldez', array('controller' => 'pages', 'action' => 'display', 'alcaldez'));
 	Router::connect('/admin/login', array('controller' => 'pages', 'action' => 'display', 'admin_login'));
+	Router::connect('/admin/projects', array('controller' => 'pages', 'action' => 'display', 'admin_projects'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

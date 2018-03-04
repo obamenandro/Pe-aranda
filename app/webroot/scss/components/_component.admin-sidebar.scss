@@ -1,0 +1,38 @@
+.admin-sidebar {
+    width: 18%;
+    position: fixed;
+    top: 55px;
+    height: 100%;
+    background: #35424a;
+    left: 0;
+    box-sizing: border-box;
+    font-size: 0;
+
+    &__link {
+        color: #ffffff;
+        display: block;
+        text-decoration: none;
+        padding: 15px;
+
+        &:hover {
+            background: #E8491D;
+        }
+    }
+
+    &__item-text {
+        display: inline-block;
+        font-size: 16px;
+        width: 80%;
+    }
+
+    &__item-icon {
+        display: inline-block;
+        width: 20%;
+        font-size: 16px;
+        text-align: right;
+    }
+}
+
+.admin-sidebar__link.admin-sidebar__link--active {
+    background: #E8491D;
+}
