@@ -723,3 +723,25 @@ body {
   color: #ffffff;
   background-color: #E8491D;
   border-radius: 3px; }
+
+.not-found {
+  text-align: center;
+  border-radius: 7px;
+  border: 2px solid #E8491D;
+  padding: 70px 20px 100px;
+  max-width: 700px;
+  margin: 10% auto;
+  background: #ffffff; }
+  .not-found__icon-wrapper {
+    padding-bottom: 10px; }
+  .not-found__icon {
+    font-size: 50px;
+    color: #cccccc; }
+  .not-found__message {
+    display: block;
+    text-align: center; }
+  .not-found__message-title {
+    display: block;
+    font-size: 30px; }
+  .not-found__note {
+    font-size: 16px; }
