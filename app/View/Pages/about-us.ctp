@@ -52,10 +52,3 @@
 </section>
 
 <?= $this->element('gototop'); ?>
-
-<script>
-    if ( $(window).width() > 767 ) {
-        window.sr = ScrollReveal();
-        sr.reveal('.main', { duration: 2000 }, 50);
-    }
-</script>
