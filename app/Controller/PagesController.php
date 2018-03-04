@@ -94,7 +94,11 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_projects() {
+	public function admin_add_projects() {
+		
+	}
+
+	public function admin_view_projects() {
 		
 	}
 }

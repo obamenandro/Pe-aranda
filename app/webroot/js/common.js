@@ -35,3 +35,10 @@ $('.gototop').click(function() {
         readURL(this);
     })
 // END UPLOADING IMAGE FUNCTION
+
+
+// SIDEBAR FUNCTION ON CLICK
+    $('.admin-sidebar__item').on('click', function() {
+        $(this).find('.admin-sidebar__submenu').slideToggle();
+    });
+// SIDEBAR FUNCTION ON CLICK

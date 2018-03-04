@@ -558,26 +558,35 @@ body {
   background: #35424a;
   left: 0;
   box-sizing: border-box;
-  font-size: 0; }
+  font-size: 0;
+  overflow-y: auto; }
   .admin-sidebar__link {
     color: #ffffff;
     display: block;
     text-decoration: none;
-    padding: 15px; }
+    padding: 15px;
+    cursor: pointer; }
     .admin-sidebar__link:hover {
       background: #E8491D; }
   .admin-sidebar__item-text {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     width: 80%; }
   .admin-sidebar__item-icon {
     display: inline-block;
     width: 20%;
-    font-size: 16px;
+    font-size: 14px;
     text-align: right; }
 
-.admin-sidebar__link.admin-sidebar__link--active {
-  background: #E8491D; }
+.admin-sidebar__submenu {
+  display: none; }
+  .admin-sidebar__submenu .admin-sidebar__link {
+    padding: 15px 15px 15px 30px;
+    background: #3e4b54; }
+    .admin-sidebar__submenu .admin-sidebar__link:hover {
+      background: #E8491D; }
+  .admin-sidebar__submenu .admin-sidebar__link.admin-sidebar__link--active {
+    background: #E8491D !important; }
 
 .admin-form {
   margin: 55px 0 0 20%;
@@ -644,3 +653,65 @@ body {
 
 .form-field__list.form-field__list--textarea .form-field__label {
   vertical-align: top; }
+
+.admin-table {
+  padding: 50px 30px; }
+  .admin-table__wrapper {
+    width: 100%; }
+  .admin-table__head {
+    background: #35424a;
+    color: #ffffff; }
+  .admin-table__title {
+    width: 20%;
+    padding: 5px 0;
+    text-align: center; }
+  .admin-table__result {
+    padding: 5px 0;
+    text-align: center;
+    font-size: 14px; }
+  .admin-table__action {
+    display: inline-block;
+    margin-left: 15px; }
+  .admin-table__link {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+    background: #5e5ef4;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 10px; }
+  .admin-table__row:nth-child(even) {
+    background-color: #ededed; }
+
+.admin-table__link.admin-table__link--delete {
+  background-color: #E8491D; }
+
+.pagination {
+  padding: 50px 0 0;
+  text-align: center; }
+  .pagination__list {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; }
+  .pagination__link {
+    display: inline-flex;
+    width: 25px;
+    text-decoration: none;
+    color: #000000;
+    height: 25px;
+    justify-content: center;
+    align-items: center; }
+    .pagination__link:hover {
+      color: #ffffff;
+      background-color: #E8491D;
+      border-radius: 3px; }
+
+.pagination__link.pagination__link--active {
+  color: #ffffff;
+  background-color: #E8491D;
+  border-radius: 3px; }
