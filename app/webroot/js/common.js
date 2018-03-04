@@ -40,6 +40,11 @@ $('.gototop').click(function() {
 // SIDEBAR FUNCTION ON CLICK
     $('.admin-sidebar__item').on('click', function() {
         $(this).find('.admin-sidebar__submenu').slideToggle();
+        if ( $(this).find('.fa-chevron-right').hasClass('fa-chevron-right') == true ) {
+            $(this).find('.fa-chevron-right').removeClass('fa-chevron-right').addClass('fa-chevron-down');
+        } else {
+            $(this).find('.fa-chevron-down').removeClass('fa-chevron-down').addClass('fa-chevron-right')
+        }
     });
 // SIDEBAR FUNCTION ON CLICK
 
