@@ -65,7 +65,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px; }
+    font-size: 16px; }
     @media screen and (max-width: 767px) {
       .header__link {
         display: block;
@@ -470,3 +470,49 @@ body {
 
 .gototop.gototop--active {
   display: block; }
+
+.login {
+  margin: 7% auto;
+  max-width: 500px;
+  padding: 50px 50px 20px;
+  border-radius: 10px;
+  border: 2px solid #E8491D;
+  background-color: #ffffff; }
+  .login__title {
+    text-align: center;
+    font-size: 30px; }
+  .login__title-highlight {
+    color: #E8491D; }
+
+.form-login {
+  padding: 50px 90px; }
+  .form-login__list {
+    display: block;
+    padding-bottom: 10px; }
+  .form-login__label {
+    display: block;
+    padding-bottom: 5px;
+    font-size: 16px; }
+  .form-login__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px; }
+  .form-login__error {
+    display: block;
+    padding: 5px 0 0;
+    color: #E8491D; }
+  .form-login__button {
+    text-align: center;
+    padding: 15px 0 0; }
+  .form-login__submit {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    width: 35%;
+    background: #E8491D;
+    color: #ffffff; }
+
+.form-login__list.form-login__list--error .form-login__input {
+  border: 1px solid #E8491D; }

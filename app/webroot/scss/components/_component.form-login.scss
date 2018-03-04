@@ -1,0 +1,48 @@
+.form-login {
+    padding: 50px 90px;
+
+    &__list {
+        display: block;
+        padding-bottom: 10px; 
+    }
+
+    &__label {
+        display: block;
+        padding-bottom: 5px;
+        font-size: 16px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+    &__error {
+        display: block;
+        padding: 5px 0 0;
+        color: #E8491D;
+    }
+
+    &__button {
+        text-align: center;
+        padding: 15px 0 0;
+    }
+
+    &__submit {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #CCC;
+        width: 35%;
+        background: #E8491D;
+        color: #ffffff;
+    }
+}
+
+.form-login__list.form-login__list--error {
+    .form-login__input {
+        border: 1px solid #E8491D;
+    }
+}

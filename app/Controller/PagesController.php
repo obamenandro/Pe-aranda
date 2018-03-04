@@ -89,4 +89,8 @@ class PagesController extends AppController {
 	public function alcaldez() {
 		
 	}
+
+	public function admin_login() {
+		
+	}
 }
