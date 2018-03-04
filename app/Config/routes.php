@@ -31,6 +31,7 @@
 	Router::connect('/admin/login', array('controller' => 'pages', 'action' => 'display', 'admin_login'));
 	Router::connect('/admin/projects/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_projects'));
 	Router::connect('/admin/projects/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_projects'));
+	Router::connect('/admin/projects/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_projects'));
 
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
