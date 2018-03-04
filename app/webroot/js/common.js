@@ -1,4 +1,3 @@
-// ON SCROLL SHOW GO TO TOP BUTTON
 $(window).scroll(function(){
     if( $(this).scrollTop() > 200 ) {
         $('.gototop').addClass('gototop--active')     
@@ -7,9 +6,7 @@ $(window).scroll(function(){
     }
 })
 
-$('body').delegate('.gototop','click', function() {
-    $('html').animate({ scrollTop: 0 }, 'slow');
+$('.gototop').click(function() {
+    $('html,body').animate({ scrollTop: 0 }, 'slow');
     return true; 
 });
-
-// END SCRIPT FOR GO TO TOP BUTTON

@@ -59,6 +59,8 @@ body {
       left: 0;
       padding: 10px 0;
       z-index: 2; } }
+  .header__logo-link {
+    text-decoration: none; }
   .header__link {
     color: #ffffff;
     text-decoration: none;
@@ -89,7 +91,7 @@ body {
     vertical-align: middle; }
     @media screen and (max-width: 767px) {
       .header__branding {
-        width: 50%; } }
+        width: 65%; } }
   .header__h1 {
     margin: 0;
     font-size: 25px;
@@ -120,7 +122,7 @@ body {
     @media screen and (max-width: 767px) {
       .header__menu-container {
         display: inline-block;
-        width: 50%;
+        width: 35%;
         vertical-align: middle;
         text-align: right;
         padding-top: 8px; } }

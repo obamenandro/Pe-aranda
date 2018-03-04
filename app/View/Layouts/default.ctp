@@ -47,7 +47,6 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	
 	<?= $this->element('footer'); ?>
 
-	<!-- COMMON SCRIPT -->
-	<?php echo $this->Html->script('common'); ?>
+	<?= $this->Html->script('common'); ?>
 </body>
 </html>

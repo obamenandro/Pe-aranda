@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="container">
 		<div class="header__branding">
-			<a href="/">	
+			<a href="/" class="header__logo-link">	
 				<h1 class="header__h1">
 					<span class="header__highlight">Peñaranda</span> Website
 				</h1>
