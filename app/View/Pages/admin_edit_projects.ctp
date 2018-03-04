@@ -169,7 +169,7 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/about-us/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add About us</span>
                         </div>
@@ -177,7 +177,7 @@
                             <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/about-us/view" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View About us</span>
                         </div>
@@ -197,7 +197,7 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Alcaldez</span>
                         </div>
@@ -205,7 +205,7 @@
                             <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Alcaldez</span>
                         </div>
@@ -221,10 +221,11 @@
 
 <div class="admin-form">
     <form class="form-field">
-        <div class="form-field__list">
+        <div class="form-field__list form-field__list--error">
             <label class="form-field__label">Title :</label>
             <div class="form-field__input-wrapper">
                 <input type="text" class="form-field__input" value="First Title">
+                <span class="form-field__error">error message</span>
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">

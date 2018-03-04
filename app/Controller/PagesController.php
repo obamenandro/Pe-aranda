@@ -105,4 +105,28 @@ class PagesController extends AppController {
 	public function admin_edit_projects() {
 		
 	}
+
+	public function admin_add_aboutus() {
+		
+	}
+
+	public function admin_edit_aboutus() {
+		
+	}
+
+	public function admin_view_aboutus() {
+		
+	}
+
+	public function admin_add_alcaldez() {
+		
+	}
+
+	public function admin_edit_alcaldez() {
+		
+	}
+
+	public function admin_view_alcaldez() {
+		
+	}
 }

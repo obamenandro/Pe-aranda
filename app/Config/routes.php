@@ -32,6 +32,12 @@
 	Router::connect('/admin/projects/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_projects'));
 	Router::connect('/admin/projects/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_projects'));
 	Router::connect('/admin/projects/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_projects'));
+	Router::connect('/admin/about-us/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_aboutus'));
+	Router::connect('/admin/about-us/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_aboutus'));
+	Router::connect('/admin/about-us/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_aboutus'));
+	Router::connect('/admin/alcaldez/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_alcaldez'));
+	Router::connect('/admin/alcaldez/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_alcaldez'));
+	Router::connect('/admin/alcaldez/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_alcaldez'));
 
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.

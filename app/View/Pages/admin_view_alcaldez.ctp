@@ -225,21 +225,21 @@
             <thead>
                 <tr class="admin-table__head">
                     <th class="admin-table__title">ID</th>
-                    <th class="admin-table__title">Title</th>
-                    <th class="admin-table__title">Description</th>
-                    <th class="admin-table__title">Date</th>
+                    <th class="admin-table__title">Name</th>
+                    <th class="admin-table__title">Years In Service</th>
+                    <th class="admin-table__title">Position</th>
                     <th class="admin-table__title" colspan="2">Action</th>
                 <tr>
             <thead>
             <tbody>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">1</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -248,12 +248,12 @@
                 </tr>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">2</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -262,12 +262,12 @@
                 </tr>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -275,13 +275,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">4</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -289,13 +289,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">5</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -303,13 +303,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">6</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>

@@ -599,7 +599,7 @@ body {
     display: inline-block;
     width: 15%;
     font-size: 16px;
-    vertical-align: middle; }
+    vertical-align: top; }
   .form-field__input-wrapper {
     display: inline-block;
     width: 85%;
@@ -610,7 +610,7 @@ body {
   .form-field__input {
     border: 1px solid #cccccc;
     border-radius: 3px;
-    width: 55%;
+    width: 85%;
     padding: 7px; }
   .form-field__textarea {
     display: block;
@@ -618,7 +618,7 @@ body {
     height: 120px;
     border: 1px solid #cccccc;
     border-radius: 3px;
-    width: 55%; }
+    width: 85%; }
   .form-field__upload-text {
     margin-left: 10px;
     display: inline-block;
@@ -650,9 +650,16 @@ body {
     border-radius: 3px;
     color: #ffffff;
     cursor: pointer; }
+  .form-field__error {
+    display: block;
+    color: #E8491D;
+    font-size: 14px; }
 
 .form-field__list.form-field__list--textarea .form-field__label {
   vertical-align: top; }
+
+.form-field__list.form-field__list--error .form-field__input {
+  border: 1px solid #E8491D; }
 
 .admin-table {
   padding: 50px 30px; }
@@ -680,7 +687,8 @@ body {
     border-radius: 5px;
     color: #ffffff;
     font-size: 14px;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    cursor: pointer; }
   .admin-table__row:nth-child(even) {
     background-color: #ededed; }
 

@@ -239,7 +239,7 @@
                     <td class="admin-table__result">2018-02-29</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/about-us/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -253,7 +253,7 @@
                     <td class="admin-table__result">2018-02-29</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/about-us/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -267,7 +267,7 @@
                     <td class="admin-table__result">2018-02-29</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/about-us/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
