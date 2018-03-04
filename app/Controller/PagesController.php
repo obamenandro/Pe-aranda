@@ -77,10 +77,6 @@ class PagesController extends AppController {
 			throw new NotFoundException();
 		}
 	}
-	
-	public function home() {
-		
-	}
 
 	public function about_us() {
 		

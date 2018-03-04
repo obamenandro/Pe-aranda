@@ -25,19 +25,62 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
-	Router::connect('/about-us', array('controller' => 'pages', 'action' => 'display', 'about-us'));
-	Router::connect('/alcaldez', array('controller' => 'pages', 'action' => 'display', 'alcaldez'));
-	Router::connect('/admin/login', array('controller' => 'pages', 'action' => 'display', 'admin_login'));
-	Router::connect('/admin/projects/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_projects'));
-	Router::connect('/admin/projects/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_projects'));
-	Router::connect('/admin/projects/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_projects'));
-	Router::connect('/admin/about-us/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_aboutus'));
-	Router::connect('/admin/about-us/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_aboutus'));
-	Router::connect('/admin/about-us/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_aboutus'));
-	Router::connect('/admin/alcaldez/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_alcaldez'));
-	Router::connect('/admin/alcaldez/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_alcaldez'));
-	Router::connect('/admin/alcaldez/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_alcaldez'));
+	Router::connect('/', array(
+		'controller' => 'tops', 
+		'action'     =>'home'
+	));
+	Router::connect('/about-us', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'about-us'
+	));
+	Router::connect('/alcaldez', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'alcaldez'
+	));
+	Router::connect('/superadmin/login', array(
+		'controller' => 'users', 
+		'action'     => 'superadmin_login', 
+	));
+	Router::connect('/superadmin/logout', array(
+		'controller' => 'users', 
+		'action'     => 'superadmin_logout', 
+	));
+	Router::connect('/superadmin/projects/add', array(
+		'controller' => 'projects', 
+		'action'     => 'superadmin_project_add', 
+	));
+	Router::connect('/admin/projects/view', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_view_projects'
+	));
+	Router::connect('/admin/projects/edit', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_edit_projects'
+	));
+	Router::connect('/admin/about-us/add', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_add_aboutus'
+	));
+	Router::connect('/admin/about-us/view', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_view_aboutus'
+	));
+	Router::connect('/admin/about-us/edit', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_edit_aboutus'
+	));
+	Router::connect('/admin/alcaldez/add', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_add_alcaldez'
+	));
+	Router::connect('/admin/alcaldez/view', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_view_alcaldez'
+	));
+	Router::connect('/admin/alcaldez/edit', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'admin_edit_alcaldez'
+	));
 
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.

@@ -31,4 +31,32 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+	public $components = array(
+	    'DebugKit.Toolbar',
+	    'Session',
+	    'Auth' => [
+	    	'authenticate' => [
+	    		'Form' => [
+	    			'fields' => [
+	    				'username' => 'username',
+	    				'password' => 'password'
+	    			],
+                    'passwordHasher' => 'Blowfish'
+	    		]
+	    	]
+	    ]
+	);
+
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(
+			'home', 
+			'superadmin_login',
+			'superadmin_logout'
+		);
+	}
+
+	public function isAuthorized($user) {
+    throw new ForbiddenException(__('You are not authorized to access.'));
+ }
 }
