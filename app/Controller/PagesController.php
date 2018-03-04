@@ -149,4 +149,16 @@ class PagesController extends AppController {
 	public function admin_view_gallery() {
 		
 	}
+
+	public function admin_add_government() {
+		
+	}
+
+	public function admin_edit_government() {
+		
+	}
+
+	public function admin_view_government() {
+		
+	}
 }

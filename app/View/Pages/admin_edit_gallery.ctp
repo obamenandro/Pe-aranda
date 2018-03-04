@@ -51,12 +51,12 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/government/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Government</span>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/government/view" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Government</span>
                         </div>
