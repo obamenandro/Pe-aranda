@@ -32,7 +32,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->meta('icon');
 		echo $this->fetch('meta');
 		echo $this->Html->css('style');
-		echo $this->Html->script('jquery-3.1.0.min');		
+		echo $this->Html->script('jquery-3.1.0.min');
+		echo $this->Html->script('/node_modules/scrollreveal/dist/scrollreveal.min.js');
+		echo $this->Html->script('common');		
 	?>
 </head>
 <body>

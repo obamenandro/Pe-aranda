@@ -58,7 +58,7 @@
 	</div>
 </section>
 
-<section id="boxes">
+<section class="boxes boxes--expectation">
 	<div class="container">
 		<div class="boxes__image-wrapper">
             <img class="boxes__image-info" src="images/events/6.jpg">
@@ -76,3 +76,9 @@
 		</div>
 	</div>
 </section>
+
+<script>
+	window.sr = ScrollReveal();
+	sr.reveal('.boxes', { duration: 2000 }, 50);
+	sr.reveal('.boxes--expectation', { duration: 2000 }, 50);
+</script>

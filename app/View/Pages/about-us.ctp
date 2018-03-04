@@ -48,6 +48,10 @@
                 <p class="sidebar__list-content">Bagaman masasabing malapit ang bayang ito sa Bundok Sierra madre ay wala naman itong nasasakupang bundok. Gayon man, sa silangang bahagi nito ay matatagpuan ang karamihan ng mga rantso ng mga taga Peñaranda.</p>
             </div>
         </aside>
-
     </div>
 </section>
+
+<script>
+	window.sr = ScrollReveal();
+	sr.reveal('.main', { duration: 2000 }, 50);
+</script>
