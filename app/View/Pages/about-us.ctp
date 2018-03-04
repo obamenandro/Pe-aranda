@@ -51,6 +51,8 @@
     </div>
 </section>
 
+<?= $this->element('gototop'); ?>
+
 <script>
 	window.sr = ScrollReveal();
 	sr.reveal('.main', { duration: 2000 }, 50);

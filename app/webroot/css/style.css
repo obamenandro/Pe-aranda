@@ -414,3 +414,19 @@ body {
     padding-bottom: 15px; }
   .sidebar__list-content {
     font-size: 14px; }
+
+.gototop {
+  display: none;
+  background-color: #E8491D;
+  position: fixed;
+  right: 50px;
+  bottom: 150px;
+  padding: 10px 12px;
+  border-radius: 3px;
+  cursor: pointer; }
+  .gototop__arrow {
+    font-size: large;
+    color: #FFFFFF; }
+
+.gototop.gototop--active {
+  display: block; }

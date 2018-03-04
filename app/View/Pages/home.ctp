@@ -77,6 +77,8 @@
 	</div>
 </section>
 
+<?= $this->element('gototop'); ?>
+
 <script>
 	window.sr = ScrollReveal();
 	sr.reveal('.boxes', { duration: 2000 }, 50);
