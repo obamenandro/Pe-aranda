@@ -20,4 +20,56 @@
         font-size: 16px;
         padding-bottom: 20px; 
     }
+
+    &__column {
+        display: inline-block;
+        width: 33.3%;
+        text-align: center;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 700;
+        color: #D3531A;
+
+        @media screen and (max-width: 767px ) {
+            display: none;
+        }
+    }
+
+    &__list-wrapper {
+        display: block;
+        padding: 10px 0 5px;
+
+        @media screen and (max-width: 767px ) {
+            border-bottom: 1px solid #cccccc;
+        }
+    }
+
+    &__result {
+        font-size: 16px;
+    }
+}
+
+.about-us.about-us--alcaldez {
+    width: 100%;
+
+    .about-us__title {
+        font-size: 22px;
+    }
+}
+
+.about-us__column {
+    &:first-child {
+        .about-us__result {
+            @media screen and (max-width: 767px ) {
+                font-weight: 700;
+            }
+        }
+    }
 }

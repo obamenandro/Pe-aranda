@@ -8,6 +8,12 @@
     border-radius: 3px;
     cursor: pointer;
 
+    @media screen and (max-width: 767px ) {
+        right: 15px;
+        bottom: 25px;
+        border: 2px solid #FFFFFF;
+    }
+    
     &__arrow {
         font-size: large;
         color: #FFFFFF;

@@ -85,4 +85,8 @@ class PagesController extends AppController {
 	public function about_us() {
 		
 	}
+
+	public function alcaldez() {
+		
+	}
 }

@@ -80,7 +80,9 @@
 <?= $this->element('gototop'); ?>
 
 <script>
-	window.sr = ScrollReveal();
-	sr.reveal('.boxes', { duration: 2000 }, 50);
-	sr.reveal('.boxes--expectation', { duration: 2000 }, 50);
+	if ( $(window).width() > 767 ) {
+		window.sr = ScrollReveal();
+		sr.reveal('.boxes', { duration: 2000 }, 50);
+		sr.reveal('.boxes--expectation', { duration: 2000 }, 50);
+	}
 </script>

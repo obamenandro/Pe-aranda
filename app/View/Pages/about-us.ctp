@@ -54,6 +54,8 @@
 <?= $this->element('gototop'); ?>
 
 <script>
-	window.sr = ScrollReveal();
-	sr.reveal('.main', { duration: 2000 }, 50);
+    if ( $(window).width() > 767 ) {
+        window.sr = ScrollReveal();
+        sr.reveal('.main', { duration: 2000 }, 50);
+    }
 </script>
