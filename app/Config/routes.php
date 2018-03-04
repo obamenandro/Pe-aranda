@@ -29,6 +29,7 @@
 	Router::connect('/about-us', array('controller' => 'pages', 'action' => 'display', 'about-us'));
 	Router::connect('/alcaldez', array('controller' => 'pages', 'action' => 'display', 'alcaldez'));
 	Router::connect('/gallery', array('controller' => 'pages', 'action' => 'display', 'gallery'));
+	Router::connect('/government', array('controller' => 'pages', 'action' => 'display', 'government'));
 	Router::connect('/admin/login', array('controller' => 'pages', 'action' => 'display', 'admin_login'));
 	Router::connect('/admin/projects/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_projects'));
 	Router::connect('/admin/projects/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_projects'));
@@ -41,8 +42,7 @@
 	Router::connect('/admin/alcaldez/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_alcaldez'));
 	Router::connect('/admin/gallery/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_gallery'));
 	Router::connect('/admin/gallery/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_gallery'));
-	Router::connect('/admin/gallery/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_gallery'));
-
+	Router::connect('/admin/gallery/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_gallery'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

@@ -812,3 +812,77 @@ body {
     font-size: 16px;
     text-align: center;
     padding: 10px 0; }
+
+.government {
+  padding: 50px 0; }
+  .government__position {
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    background: #cccccc;
+    border-radius: 5px; }
+  .government__officials {
+    padding-bottom: 50px; }
+  .government__officials-image {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center; }
+    @media screen and (max-width: 767px) {
+      .government__officials-image {
+        width: 100%; } }
+  .government__image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; }
+  .government__officials-information {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-information {
+        width: 100%;
+        padding: 20px 20px 0; } }
+  .government__officials-description {
+    font-size: 16px; }
+  .government__officials-label {
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-label {
+        width: 25%; } }
+  .government__officials-span {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-span {
+        width: 70%; } }
+  .government__officials-multiple {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .government__officials-multiple {
+        width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-image {
+  width: 30%; }
+  @media screen and (max-width: 767px) {
+    .government__officials--multiple.government__officials--multiple .government__officials-image {
+      width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-information {
+  width: 65%; }
+  @media screen and (max-width: 767px) {
+    .government__officials--multiple.government__officials--multiple .government__officials-information {
+      width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-label {
+  width: 25%; }
+
+.government__officials--multiple.government__officials--multiple .government__officials-span {
+  width: 70%; }

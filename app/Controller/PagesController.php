@@ -94,6 +94,10 @@ class PagesController extends AppController {
 		
 	}
 
+	public function government() {
+		
+	}
+
 	public function admin_login() {
 		
 	}
