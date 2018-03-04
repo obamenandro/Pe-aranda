@@ -1,0 +1,106 @@
+.government {
+    padding: 50px 0;
+
+    &__position {
+        margin-bottom: 20px;
+        font-size: 25px;
+        text-align: center;
+        background: #cccccc;
+        border-radius: 5px;
+    }
+
+    &__officials {
+        padding-bottom: 50px;
+    }
+
+    &__officials-image {
+        display: inline-block;
+        width: 20%;
+        vertical-align: middle;
+        text-align: center;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__officials-information {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+            padding: 20px 20px 0;
+        }
+    }
+
+    &__officials-description {
+        font-size: 16px;
+    }
+
+    &__officials-label {
+        display: inline-block;
+        width: 10%;
+        vertical-align: middle;
+
+        @media screen and (max-width: 767px ) {
+            width: 25%;
+        }
+    }
+
+    &__officials-span {
+        display: inline-block;
+        width: 80%;
+        vertical-align: middle;
+
+        @media screen and (max-width: 767px ) {
+            width: 70%;
+        }
+    }
+
+    &__officials-multiple {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+        }
+    }
+}
+
+.government__officials--multiple.government__officials--multiple {
+
+    .government__officials-image {
+        width: 30%;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+        }
+    }
+
+    .government__officials-information {
+        width: 65%;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+        }
+    }
+
+    .government__officials-label {
+        width: 25%;
+    }
+
+    .government__officials-span {
+        width: 70%;
+    }
+}

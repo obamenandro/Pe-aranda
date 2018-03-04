@@ -644,7 +644,7 @@ body {
     padding: 30px;
     text-align: center; }
   .form-field__button-register {
-    padding: 7px 35px;
+    padding: 7px 60px;
     border: 1px solid #E8491D;
     background-color: #E8491D;
     border-radius: 3px;
@@ -654,12 +654,48 @@ body {
     display: block;
     color: #E8491D;
     font-size: 14px; }
+  .form-field__gallery-box {
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    padding-bottom: 30px; }
+  .form-field__add-image {
+    width: 59%;
+    border: 1px solid #cccccc;
+    padding: 100px 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #ffffff; }
+  .form-field__add-icon {
+    font-size: 50px;
+    color: #cccccc; }
+  .form-field__add-field {
+    font-size: 14px;
+    padding: 25px;
+    display: block; }
+  .form-field__add-more {
+    display: inline-block;
+    margin-top: 10%;
+    width: 33.3%;
+    vertical-align: top;
+    padding-bottom: 30px;
+    cursor: pointer; }
+  .form-field__gallery-wrapper {
+    display: inline; }
 
 .form-field__list.form-field__list--textarea .form-field__label {
   vertical-align: top; }
 
 .form-field__list.form-field__list--error .form-field__input {
   border: 1px solid #E8491D; }
+
+.form-field.form-field--gallery {
+  padding: 40px 25px; }
+  .form-field.form-field--gallery .form-field__image {
+    height: 200px; }
+  .form-field.form-field--gallery .form-field__label {
+    width: 70%;
+    padding-bottom: 7px; }
 
 .admin-table {
   padding: 50px 30px; }
@@ -724,6 +760,9 @@ body {
   background-color: #E8491D;
   border-radius: 3px; }
 
+.pagination.pagination--gallery {
+  padding: 25px 0 50px; }
+
 .not-found {
   text-align: center;
   border-radius: 7px;
@@ -745,3 +784,105 @@ body {
     font-size: 30px; }
   .not-found__note {
     font-size: 16px; }
+
+.gallery {
+  font-size: 0; }
+  .gallery__list {
+    padding: 50px 0; }
+  .gallery__item {
+    display: inline-block;
+    width: 31.3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    vertical-align: bottom; }
+    .gallery__item:nth-child(3n) {
+      margin-right: 0; }
+    @media screen and (max-width: 767px) {
+      .gallery__item {
+        width: 48%;
+        margin-right: 4%; }
+        .gallery__item:nth-child(3n) {
+          margin-right: 4%; }
+        .gallery__item:nth-child(2n) {
+          margin-right: 0; } }
+  .gallery__image {
+    width: 100%; }
+  .gallery__image-title {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 0; }
+
+.government {
+  padding: 50px 0; }
+  .government__position {
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-align: center;
+    background: #cccccc;
+    border-radius: 5px; }
+  .government__officials {
+    padding-bottom: 50px; }
+  .government__officials-image {
+    display: inline-block;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center; }
+    @media screen and (max-width: 767px) {
+      .government__officials-image {
+        width: 100%; } }
+  .government__image {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; }
+  .government__officials-information {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-information {
+        width: 100%;
+        padding: 20px 20px 0; } }
+  .government__officials-description {
+    font-size: 16px; }
+  .government__officials-label {
+    display: inline-block;
+    width: 10%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-label {
+        width: 25%; } }
+  .government__officials-span {
+    display: inline-block;
+    width: 80%;
+    vertical-align: middle; }
+    @media screen and (max-width: 767px) {
+      .government__officials-span {
+        width: 70%; } }
+  .government__officials-multiple {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .government__officials-multiple {
+        width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-image {
+  width: 30%; }
+  @media screen and (max-width: 767px) {
+    .government__officials--multiple.government__officials--multiple .government__officials-image {
+      width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-information {
+  width: 65%; }
+  @media screen and (max-width: 767px) {
+    .government__officials--multiple.government__officials--multiple .government__officials-information {
+      width: 100%; } }
+
+.government__officials--multiple.government__officials--multiple .government__officials-label {
+  width: 25%; }
+
+.government__officials--multiple.government__officials--multiple .government__officials-span {
+  width: 70%; }
