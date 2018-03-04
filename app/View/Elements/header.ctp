@@ -23,7 +23,7 @@
 				<li class="header__nav-list"><a class="header__link" href="/home">Government</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/history">Tourism</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/home">Services</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/history">Gallery</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/gallery">Gallery</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/about-us">About us</a></li>
 			</ul>
 		</nav>

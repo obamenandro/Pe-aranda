@@ -90,6 +90,10 @@ class PagesController extends AppController {
 		
 	}
 
+	public function gallery() {
+		
+	}
+
 	public function admin_login() {
 		
 	}
