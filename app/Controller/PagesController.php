@@ -133,4 +133,16 @@ class PagesController extends AppController {
 	public function admin_view_alcaldez() {
 		
 	}
+
+	public function admin_add_gallery() {
+		
+	}
+
+	public function admin_edit_gallery() {
+		
+	}
+
+	public function admin_view_gallery() {
+		
+	}
 }

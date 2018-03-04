@@ -141,17 +141,17 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Services</span>
+                            <span>Add Gallery</span>
                         </div>
                         <div class="admin-sidebar__item-icon">
                             <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/view" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
+                            <span>View Gallery</span>
                         </div>
                         <div class="admin-sidebar__item-icon">
                             <i class="fa fa-chevron-right"></i>

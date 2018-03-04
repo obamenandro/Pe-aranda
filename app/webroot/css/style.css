@@ -644,7 +644,7 @@ body {
     padding: 30px;
     text-align: center; }
   .form-field__button-register {
-    padding: 7px 35px;
+    padding: 7px 60px;
     border: 1px solid #E8491D;
     background-color: #E8491D;
     border-radius: 3px;
@@ -654,12 +654,48 @@ body {
     display: block;
     color: #E8491D;
     font-size: 14px; }
+  .form-field__gallery-box {
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    padding-bottom: 30px; }
+  .form-field__add-image {
+    width: 59%;
+    border: 1px solid #cccccc;
+    padding: 100px 20px;
+    border-radius: 8px;
+    text-align: center;
+    background: #ffffff; }
+  .form-field__add-icon {
+    font-size: 50px;
+    color: #cccccc; }
+  .form-field__add-field {
+    font-size: 14px;
+    padding: 25px;
+    display: block; }
+  .form-field__add-more {
+    display: inline-block;
+    margin-top: 10%;
+    width: 33.3%;
+    vertical-align: top;
+    padding-bottom: 30px;
+    cursor: pointer; }
+  .form-field__gallery-wrapper {
+    display: inline; }
 
 .form-field__list.form-field__list--textarea .form-field__label {
   vertical-align: top; }
 
 .form-field__list.form-field__list--error .form-field__input {
   border: 1px solid #E8491D; }
+
+.form-field.form-field--gallery {
+  padding: 40px 25px; }
+  .form-field.form-field--gallery .form-field__image {
+    height: 200px; }
+  .form-field.form-field--gallery .form-field__label {
+    width: 70%;
+    padding-bottom: 7px; }
 
 .admin-table {
   padding: 50px 30px; }
