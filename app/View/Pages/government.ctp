@@ -1,6 +1,6 @@
 <section class="newsletter">
 	<div class="container">
-		<h2 class="newsletter__center">Peñaranda Government</h2>
+		<h2 class="newsletter__center">Peñaranda Government Officials</h2>
 	</div>
 </section>
 

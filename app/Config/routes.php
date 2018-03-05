@@ -82,6 +82,10 @@
 		'action'     => 'display', 'admin_edit_alcaldez'
 	));
 
+	
+	Router::connect('/admin/government/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_government'));
+	Router::connect('/admin/government/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_government'));
+	Router::connect('/admin/government/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
