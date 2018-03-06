@@ -14,17 +14,17 @@ class UsersController extends AppController {
 		if ($this->request->is('post')) {
             $this->Auth->logout();
             if ($this->request->data['User']['username'] == '') {
-                $this->Session->setFlash(__('Please enter your username.'));
+                $this->Session->setFlash(__('Please enter your username.'), 'error');
                 return $this->redirect('/superadmin/login');
             } elseif ($this->request->data['User']['password'] == '') {
-                $this->Session->setFlash(__('Please input your password'));
+                $this->Session->setFlash(__('Please input your password'), 'error');
                 return $this->redirect('/superadmin/login');
             }
             if ($this->Auth->login()) {
             	die();
                 return $this->redirect('/superadmin/members');
             } else {
-            	$this->Session->setFlash(__('Invalid username or password.'));
+            	$this->Session->setFlash(__('Invalid username or password.'), 'error');
             	return $this->redirect('/superadmin/login');
             }
         }

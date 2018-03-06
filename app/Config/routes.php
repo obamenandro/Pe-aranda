@@ -49,9 +49,9 @@
 		'controller' => 'projects', 
 		'action'     => 'superadmin_project_add', 
 	));
-	Router::connect('/admin/projects/view', array(
+	Router::connect('/superadmin/projects/view', array(
 		'controller' => 'pages', 
-		'action'     => 'display', 'admin_view_projects'
+		'action'     => 'superadmin_project_view'
 	));
 	Router::connect('/admin/projects/edit', array(
 		'controller' => 'pages', 
