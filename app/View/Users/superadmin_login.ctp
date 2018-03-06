@@ -11,9 +11,9 @@
             <span class="login__title-highlight">Peñaranda</span>
             <span>Admin</span>
         </h2>
-        <?= $this->Session->flash(); ?>
     </div>
     <?= $this->Form->create('User', ['class' => "form-login"]); ?>
+    <?= $this->Session->flash(); ?>
         <div class="form-login__list">
             <label class="form-login__label">Username</label>
             <?= $this->Form->input('username', [

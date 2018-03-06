@@ -146,11 +146,23 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_add_government() {
+	public function admin_add_councilor() {
 		
 	}
 
-	public function admin_edit_government() {
+	public function admin_edit_mayor() {
+		
+	}
+
+	public function admin_edit_vicemayor() {
+		
+	}
+
+	public function admin_edit_captain() {
+		
+	}
+
+	public function admin_edit_councilor() {
 		
 	}
 
