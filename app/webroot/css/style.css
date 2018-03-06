@@ -512,7 +512,10 @@ body {
     border: 1px solid #CCC;
     width: 35%;
     background: #E8491D;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: pointer; }
+    .form-login__submit:hover {
+      opacity: 0.7; }
 
 .form-login__list.form-login__list--error .form-login__input {
   border: 1px solid #E8491D; }

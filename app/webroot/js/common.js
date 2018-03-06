@@ -19,20 +19,20 @@ $('.gototop').click(function() {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-                $('.form-field__image').attr('src', e.target.result);
-                $('.form-field__upload-text').text(input.files[0]['name'])
+                $(input).find('.form-field__image').attr('src', e.target.result);
+                $(input).find('.form-field__upload-text').text(input.files[0]['name'])
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
 
-    $("#input-file").change(function(){
+    $('html, body').off().delegate('.form-field__upload', 'click', function() {
+        $(this).prev().trigger('click');
         readURL(this);
-    });
 
-    $('.form-field__upload').on('click',function() {
-        $('#input-file').trigger('click');
-        readURL(this);
+        $(this).find(".input-file").change(function(){
+            readURL(this);
+        });
     })
 // END UPLOADING IMAGE FUNCTION
 

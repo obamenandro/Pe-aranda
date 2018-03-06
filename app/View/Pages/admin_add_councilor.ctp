@@ -51,9 +51,24 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/government/add" class="admin-sidebar__link">
+                    <a href="/admin/mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
+                            <span>Edit Mayor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/vice-mayor/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Vice Mayor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Captain</span>
+                        </div>
+                    </a>
+                    <a href="/admin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
                         </div>
                     </a>
                     <a href="/admin/government/view" class="admin-sidebar__link">
@@ -201,13 +216,7 @@
         <div class="form-field__list form-field__list--textarea">
             <label class="form-field__label">Position :</label>
             <div class="form-field__input-wrapper">
-                <select class="form-field__input">
-                    <option>--choose one--</option>
-                    <option>Mayor</option>
-                    <option>Vice Mayor</option>
-                    <option>Councilor</option>
-                    <option>Brgy. Captain</option>
-                </select>
+                <input type="text" value="Councilor" class="form-field__input" disabled>
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">

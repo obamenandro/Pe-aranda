@@ -83,9 +83,12 @@
 	));
 
 	
-	Router::connect('/admin/government/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_government'));
+	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
+	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
+	Router::connect('/admin/captain/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_captain'));
+	Router::connect('/admin/councilor/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_councilor'));
 	Router::connect('/admin/government/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_government'));
-	Router::connect('/admin/government/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));	
+	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

@@ -38,6 +38,11 @@
         width: 35%;
         background: #E8491D;
         color: #ffffff;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.9;
+        }
     }
 }
 
