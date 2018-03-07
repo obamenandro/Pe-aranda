@@ -1,4 +1,5 @@
-<?php
+
+?php
 /**
  * Routes configuration
  *

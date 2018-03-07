@@ -1,40 +1,48 @@
 // SCROLL TO TOP SCRIPT
 $(window).scroll(function(){
     if( $(this).scrollTop() > 200 ) {
-        $('.gototop').addClass('gototop--active')     
+        $('.gototop').addClass('gototop--active')
     } else {
-        $('.gototop').removeClass('gototop--active') 
+        $('.gototop').removeClass('gototop--active')
     }
 })
 
 $('.gototop').click(function() {
     $('html,body').animate({ scrollTop: 0 }, 'slow');
-    return true; 
+    return true;
 });
 // END OF SCROLL TO TOP
 
-
 // UPLOADING IMAGE FUNCTION
-    function readURL(input) {
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
-            reader.onload = function (e) {
-                $(input).find('.form-field__image').attr('src', e.target.result);
-                $(input).find('.form-field__upload-text').text(input.files[0]['name'])
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
+// function readURL(input) {
+//     if (input.files && input.files[0]) {
+//         var reader = new FileReader();
+//         reader.onload = function (e) {
+//             $(input).find('.form-field__image').attr('src', e.target.result);
+//             $(input).find('.form-field__upload-text').text(input.files[0]['name'])
+//         }
+//         reader.readAsDataURL(input.files[0]);
+//     }
+// }
 
-    $('html, body').off().delegate('.form-field__upload', 'click', function() {
-        $(this).prev().trigger('click');
-        readURL(this);
-
-        $(this).find(".input-file").change(function(){
-            readURL(this);
-        });
-    })
+// $("#input-file").change(function(){
+//     readURL(this);
+// });
 // END UPLOADING IMAGE FUNCTION
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('.form-field__image-wrapper img').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+$("#input-file").change(function(){
+    readURL(this);
+});
 
 
 // SIDEBAR FUNCTION ON CLICK
@@ -57,8 +65,8 @@ $('.gototop').click(function() {
             <div class="form-field__input-wrapper">\
                 <input type="text" class="form-field__input">\
                 <span class="form-field__error">error message</span>\
-            </div>\ 
-        </div>\ 
+            </div>\
+        </div>\
         <div class="form-field__list form-field__list--textarea">\
             <label class="form-field__label">Description :</label>\
             <div class="form-field__input-wrapper">\
