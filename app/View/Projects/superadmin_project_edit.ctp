@@ -12,7 +12,7 @@
         <span>Admin</span>
     </div>
     <div class="header-admin__logout">
-        <button class="header-admin__button" onclick="document.location.href='/superadmin/logout'">Logout</button>
+        <button class="header-admin__button">Logout</button
     </div>
 </header>
 
@@ -29,20 +29,14 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects/add" class="admin-sidebar__link  admin-sidebar__link--active">
+                    <a href="/admin/projects/add" class="admin-sidebar__link  admin-sidebar__link--active">
                         <div class="admin-sidebar__item-text">
                             <span>Add Projects</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/projects/view" class="admin-sidebar__link">
+                    <a href="/admin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Projects</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Projects</span>
                         </div>
                     </a>
                 </div>
@@ -57,24 +51,33 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>Edit Mayor</span>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/vice-mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Government</span>
+                            <span>Edit Vice Mayor</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <a href="/admin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Captain</span>
+                        </div>
+                    </a>
+                    <a href="/admin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/government/list" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>List Government</span>
                         </div>
                     </a>
                 </div>
-            </li>
+            </li>    
             <li class="admin-sidebar__item">
                 <a class="admin-sidebar__link">
                     <div class="admin-sidebar__item-text">
@@ -89,16 +92,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Tourism</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Tourism</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Tourism</span>
                         </div>
                     </a>
                 </div>
@@ -117,16 +114,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Services</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Services</span>
                         </div>
                     </a>
                 </div>
@@ -141,20 +132,14 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>Add Gallery</span>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Gallery</span>
                         </div>
                     </a>
                 </div>
@@ -173,16 +158,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add About us</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/about-us/view" class="admin-sidebar__link">
+                    <a href="/admin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View About us</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List About us</span>
                         </div>
                     </a>
                 </div>
@@ -201,16 +180,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Alcaldez</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Alcaldez</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Alcaldez</span>
                         </div>
                     </a>
                 </div>
@@ -220,13 +193,11 @@
 </aside>
 
 <div class="admin-form">
-    <?=
-        $this->Form->create('Project', [
-            'type'    => "POST",
-            'enctype' => "multipart/form-data" ,
-            'class'   => "form-field"
-        ]);
-    ?>
+    <?= $this->Form->create('Project', [
+        'type'    => 'POST',
+        'enctype' => "multipart/form-data" ,
+        'class'   => "form-field"
+    ]) ?>
         <div class="form-field__list form-field__list--error">
             <label class="form-field__label">Title :</label>
             <div class="form-field__input-wrapper">
@@ -272,17 +243,19 @@
                     ]);
                 ?>
                 <div class="form-field__image-wrapper">
-                    <img src="/images/placeholder/placeholder.png" class="form-field__image">
+                    <?php if(!empty($project['Project']['image'])): ?>
+                        <img src="<?= $project['Project']['image'] ?>" class="form-field__image">
+                    <?php else: ?>
+                        <img src="/images/placeholder/placeholder.png" class="form-field__image">
+                    <?php endif; ?>
                 </div>
-                <span class="form-field__error"><?= $this->Form->error('image'); ?></span>
             </div>
-        </div>
+        </div>  
         <div class="form-field__button">
-            <?=
-                $this->Form->submit('Register', ['class' => "form-field__button-register"]);
-            ?>
-        </div>
+            <input type="submit" value="Update" class="form-field__button-register">
+        </div>  
     <?= $this->Form->end(); ?>
+
 </div>
-<?= $this->Html->script('jquery-3.1.0.min'); ?>
-<?= $this->Html->script('common'); ?>
+<?php echo $this->Html->script('jquery-3.1.0.min'); ?>
+<?php echo $this->Html->script('common'); ?>

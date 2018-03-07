@@ -12,7 +12,7 @@
         <span>Admin</span>
     </div>
     <div class="header-admin__logout">
-        <button class="header-admin__button" onclick="document.location.href='/superadmin/logout'">Logout</button>
+        <button class="header-admin__button">Logout</button
     </div>
 </header>
 
@@ -29,20 +29,14 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects/add" class="admin-sidebar__link  admin-sidebar__link--active">
+                    <a href="/admin/projects/add" class="admin-sidebar__link  admin-sidebar__link--active">
                         <div class="admin-sidebar__item-text">
                             <span>Add Projects</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/projects/view" class="admin-sidebar__link">
+                    <a href="/admin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Projects</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Projects</span>
                         </div>
                     </a>
                 </div>
@@ -57,24 +51,33 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>Edit Mayor</span>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/vice-mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Government</span>
+                            <span>Edit Vice Mayor</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                    </a>
+                    <a href="/admin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Captain</span>
+                        </div>
+                    </a>
+                    <a href="/admin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/government/list" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>List Government</span>
                         </div>
                     </a>
                 </div>
-            </li>
+            </li>    
             <li class="admin-sidebar__item">
                 <a class="admin-sidebar__link">
                     <div class="admin-sidebar__item-text">
@@ -89,16 +92,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Tourism</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Tourism</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Tourism</span>
                         </div>
                     </a>
                 </div>
@@ -117,16 +114,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Services</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Services</span>
                         </div>
                     </a>
                 </div>
@@ -141,20 +132,14 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>Add Gallery</span>
                         </div>
                     </a>
-                    <a href="/admin/projects" class="admin-sidebar__link">
+                    <a href="/admin/gallery/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Gallery</span>
                         </div>
                     </a>
                 </div>
@@ -173,16 +158,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add About us</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/about-us/view" class="admin-sidebar__link">
+                    <a href="/admin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View About us</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List About us</span>
                         </div>
                     </a>
                 </div>
@@ -201,16 +180,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Alcaldez</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
-                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Alcaldez</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
+                            <span>List Alcaldez</span>
                         </div>
                     </a>
                 </div>
@@ -218,71 +191,76 @@
         </ul>
     </nav>
 </aside>
-
+<?= $this->Session->flash(); ?>
 <div class="admin-form">
-    <?=
-        $this->Form->create('Project', [
-            'type'    => "POST",
-            'enctype' => "multipart/form-data" ,
-            'class'   => "form-field"
-        ]);
-    ?>
-        <div class="form-field__list form-field__list--error">
-            <label class="form-field__label">Title :</label>
-            <div class="form-field__input-wrapper">
-                <?=
-                    $this->Form->input('title', [
-                        'type'     => 'text',
-                        'div'      => false,
-                        'label'    => false,
-                        'required' => false,
-                        'error'    => false,
-                        'class'    => 'form-field__input'
-                    ]);
+    <div class="admin-table">
+        <table class="admin-table__wrapper">
+            <thead>
+                <tr class="admin-table__head">
+                    <th class="admin-table__title">ID</th>
+                    <th class="admin-table__title">Title</th>
+                    <th class="admin-table__title">Description</th>
+                    <th class="admin-table__title">Date</th>
+                    <th class="admin-table__title" colspan="2">Action</th>
+                <tr>
+            <thead>
+            <tbody>
+                <?php foreach($project_lists as $project): ?>
+                <tr class="admin-table__row">
+                    <td class="admin-table__result"><?= $project['Project']['id'] ?></td>
+                    <td class="admin-table__result"><?= $project['Project']['title'] ?></td>
+                    <td class="admin-table__result"><?= $project['Project']['description'] ?></td>
+                    <td class="admin-table__result"><?= date('Y-m-d', strtotime($project['Project']['created'])) ?></td>
+                    <td class="admin-table__result" colspan="2">
+                        <div class="admin-table__action">
+                            <a href="/superadmin/projects/edit/<?= $project['Project']['id'] ?>" class="admin-table__link">Edit</a>
+                        </div>
+                        <div class="admin-table__action">
+                            <a href="/superadmin/projects/delete/<?= $project['Project']['id'] ?>" class="admin-table__link admin-table__link--delete">Delete</a>
+                        </div>
+                    </td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <ul>
+                <?php 
+                    $paginatorParams = $this->Paginator->params();
+
+                    if (count($project_lists) != 0 && $paginatorParams['count'] > $paginatorParams['limit']) {
+                        // previous
+                        echo $this->Paginator->prev('< previous', array(), null, array('class' => 'prev disabled'));
+                        // the 'number' page buttons
+                        echo $this->Paginator->numbers([
+                            'modulus'      => 5, 
+                            'separator'    => '',
+                            'tag'          => 'li',
+                            'currentClass' => 'pagination__link--active',
+                            'class'        => 'pagination__list',
+                        ]);
+                        // next
+                        echo $this->Paginator->next(' next > ', array(), null, array('class' => 'next disabled'));
+                    }
                 ?>
-                <span class="form-field__error"><?= $this->Form->error('title'); ?></span>
-            </div>
+                <!-- <li class="pagination__list">
+                    <a href="" class="pagination__link"><i class="fa fa-chevron-left"></i></a>
+                </li>
+                <li class="pagination__list">
+                    <a href="" class="pagination__link pagination__link--active">1</a>
+                </li>
+                <li class="pagination__list">
+                    <a href="" class="pagination__link">2</a>
+                </li>
+                <li class="pagination__list">
+                    <a href="" class="pagination__link">3</a>
+                </li>
+                <li class="pagination__list">
+                    <a href="" class="pagination__link"><i class="fa fa-chevron-right"></i></a>
+                </li> -->
+            </ul>
         </div>
-        <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Description :</label>
-            <div class="form-field__input-wrapper">
-                <?=
-                    $this->Form->input('description', [
-                        'type'     => 'textarea',
-                        'div'      => false,
-                        'label'    => false,
-                        'required' => false,
-                        'class'    => 'form-field__textarea'
-                    ]);
-                ?>
-                <span class="form-field__error"><?= $this->Form->error('description'); ?></span>
-            </div>
-        </div>
-        <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Image :</label>
-            <div class="form-field__input-wrapper">
-                <?=
-                    $this->Form->input('Upload.image', [
-                        'type'     => 'file',
-                        'id'       => 'input-file',
-                        'required' => false,
-                        'div'      => false,
-                        'label'    => false,
-                        'class'    => 'input__upload-img'
-                    ]);
-                ?>
-                <div class="form-field__image-wrapper">
-                    <img src="/images/placeholder/placeholder.png" class="form-field__image">
-                </div>
-                <span class="form-field__error"><?= $this->Form->error('image'); ?></span>
-            </div>
-        </div>
-        <div class="form-field__button">
-            <?=
-                $this->Form->submit('Register', ['class' => "form-field__button-register"]);
-            ?>
-        </div>
-    <?= $this->Form->end(); ?>
+    </div> 
 </div>
-<?= $this->Html->script('jquery-3.1.0.min'); ?>
-<?= $this->Html->script('common'); ?>
+<?php echo $this->Html->script('jquery-3.1.0.min'); ?>
+<?php echo $this->Html->script('common'); ?>

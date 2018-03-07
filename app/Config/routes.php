@@ -1,5 +1,5 @@
 
-?php
+<?php
 /**
  * Routes configuration
  *
@@ -62,13 +62,17 @@
 		'controller' => 'projects', 
 		'action'     => 'superadmin_project_add', 
 	));
-	Router::connect('/admin/projects/list', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_list_projects'
+	Router::connect('/superadmin/projects/list', array(
+		'controller' => 'projects', 
+		'action'     => 'superadmin_project_list'
 	));
-	Router::connect('/admin/projects/edit', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_edit_projects'
+	Router::connect('/superadmin/projects/edit/*', array(
+		'controller' => 'projects', 
+		'action'     => 'superadmin_project_edit'
+	));
+	Router::connect('/superadmin/projects/delete/*', array(
+		'controller' => 'projects', 
+		'action'     => 'superadmin_project_delete'
 	));
 	Router::connect('/admin/about-us/add', array(
 		'controller' => 'pages', 
