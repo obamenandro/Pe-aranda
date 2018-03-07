@@ -12,13 +12,18 @@ class ProjectsController extends AppController {
  */
 
 	public $components = [
-		'Flash', 
-		'Image', 
-		'Paginator', 
+		'Flash',
+		'Image',
+		'Paginator',
 		'Session'
 	];
 
+    public function beforeFilter() {
+        parent::beforeFilter();
+        $this->layout = 'admin';
+    }
 	public function superadmin_project_add() {
+        $this->Project = ClassRegistry::init('Project');
 		if ($this->request->is("POST")) {
 			$data = $this->request->data;
 			$dir  = APP."webroot/img/uploads/projects/";
@@ -26,13 +31,12 @@ class ProjectsController extends AppController {
 			if (!file_exists($dir)) {
 				mkdir($dir, 0777, true);
 			}
-
-			$this->Project->set($data['Projects']);
+			$this->Project->set($data);
 			if ($this->Project->validates()) {
 				if ($this->Project->save($data)) {
 					$id = $this->Project->getLastInsertId();
 
-					//saving image 
+					//saving image
 					if ($data['Upload']['image']['size'] != 0) {
 						$ext  = explode(".", $data['Upload']['image']['name']);
 						$dir2 = $dir . $id . "/";
@@ -41,7 +45,7 @@ class ProjectsController extends AppController {
 							mkdir($dir . $id . "/", 0777, true);
 						}
 						$filename = $this->Image->save(
-							$data['Upload']['image']['tmp_name'], 
+							$data['Upload']['image']['tmp_name'],
 							$dir2, $ext[1]);
 		                if (!empty($filename)) {
 		                    // $data['Upload']['icon_image'] = $filename;

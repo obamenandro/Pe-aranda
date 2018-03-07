@@ -74,7 +74,7 @@
                         </div>
                     </a>
                 </div>
-            </li>    
+            </li>
             <li class="admin-sidebar__item">
                 <a class="admin-sidebar__link">
                     <div class="admin-sidebar__item-text">
@@ -220,12 +220,12 @@
 </aside>
 
 <div class="admin-form">
-    <?= 
-        $this->Form->create('Projects', [
+    <?=
+        $this->Form->create('Project', [
             'type'    => "POST",
             'enctype' => "multipart/form-data" ,
             'class'   => "form-field"
-        ]); 
+        ]);
     ?>
         <div class="form-field__list form-field__list--error">
             <label class="form-field__label">Title :</label>
@@ -236,14 +236,11 @@
                         'div'      => false,
                         'label'    => false,
                         'required' => false,
+                        'error'    => false,
                         'class'    => 'form-field__input'
                     ]);
                 ?>
-                <?=
-                    $this->Form->error('title', [
-                        'class' => "form-field__error"
-                    ]); 
-                ?>
+                <span class="form-field__error"><?= $this->Form->error('title'); ?></span>
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
@@ -261,29 +258,30 @@
                 <?=
                     $this->Form->error('description', [
                         'class' => "form-field__error"
-                    ]); 
+                    ]);
                 ?>
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
             <label class="form-field__label">Image :</label>
             <div class="form-field__input-wrapper">
-                <?= 
+                <?=
                     $this->Form->input('Upload.image', [
                         'type'     => 'file',
                         'id'       => 'input-file',
                         'required' => false,
                         'div'      => false,
-                        'label'    => false
+                        'label'    => false,
+                        'class'    => 'input__upload-img'
                     ]);
                 ?>
                 <div class="form-field__image-wrapper">
                     <img src="/images/placeholder/placeholder.png" class="form-field__image">
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="form-field__button">
-            <?= 
+            <?=
                 $this->Form->submit('Register', ['class' => "form-field__button-register"]);
             ?>
         </div>

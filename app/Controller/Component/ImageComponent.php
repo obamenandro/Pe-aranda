@@ -16,32 +16,13 @@ class ImageComponent extends Component {
     * @return String Image file name
     */
     public function save($tmp_image_file_name, $dir, $ext, $newFilename = null) {
-        // $env = Configure::read('env');
-        // $file_name = $newFilename ?: $this->generateImageFileName();
-        // try {
-        //     if ($env === 'dev') {
-        //         if (!is_dir($dir)) {
-        //             mkdir($dir, 0777, true);
-        //         }
-        //         $file_name = rtrim($file_name, '.');
-        //         $ext = '.'. ltrim($ext, '.');
-        //         move_uploaded_file($tmp_image_file_name,  $dir.$file_name.$ext);
-
-        //     } else if ($env === 'staging' || $env === 'production') {
-        //         // Save in Amazon S3 Bucket 
-        //     }
-        //     return $file_name.$ext;
-        // } catch(Exception $e) {
-        //     // Write error log
-        //     CakeLog::write('error', "upload : ".$e->getMessage());
-        //     return false;
-        // }
+        $file_name = $newFilename ?: $this->generateImageFileName();
         if (!is_dir($dir)) {
             mkdir($dir, 0777, true);
         }
         $file_name = rtrim($file_name, '.');
-        $ext = '.'. ltrim($ext, '.');
-        move_uploaded_file($tmp_image_file_name,  $dir.$file_name.$ext);
+        $ext       = '.'. ltrim($ext, '.');
+        move_uploaded_file($tmp_image_file_name,  $dir . $file_name . $ext);
 
         return $file_name.$ext;
     }

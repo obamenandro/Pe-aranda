@@ -49,14 +49,10 @@ class AppController extends Controller {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->allow(
-			'home', 
+	   	$this->Auth->allow(
+			'home',
 			'superadmin_login',
 			'superadmin_logout'
 		);
 	}
-
-	public function isAuthorized($user) {
-    throw new ForbiddenException(__('You are not authorized to access.'));
- }
 }

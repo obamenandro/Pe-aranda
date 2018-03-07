@@ -17,13 +17,13 @@ class Project extends AppModel {
 				'rule'    => ['notBlank'],
 				'message' => 'Project title is required.'
 			],
-		),
+		],
 		'description' => [
 			'notBlank' => [
-				'rule' => ['notBlank'],
-				'message' => 'Project description is required.',
+                'rule'    => ['notBlank'],
+                'message' => 'Project description is required.',
 			],
-		),
+		],
 		'image' => [
 			'notBlank' => [
 				'rule' => ['notBlank'],
@@ -37,6 +37,6 @@ class Project extends AppModel {
 				'rule'    => ['extension', ['gif', 'jpeg', 'png', 'jpg']],
 				'message' => 'Please supply a valid image.'
             ],
-		),
-	);
+		]
+	];
 }
