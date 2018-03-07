@@ -21,7 +21,7 @@
 					<a class="header__link" href="/">Home</a>
 				</li>
 				<li class="header__nav-list"><a class="header__link" href="/government">Government</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/history">Tourism</a></li>
+				<li class="header__nav-list"><a class="header__link" href="/tourism">Tourism</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/home">Services</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/gallery">Gallery</a></li>
 				<li class="header__nav-list"><a class="header__link" href="/about-us">About us</a></li>

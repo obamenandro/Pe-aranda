@@ -23,7 +23,7 @@
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',
  * its action called 'display', and we pass a param to select the view file
- * to use (in this case, /app/View/Pages/home.ctp)...
+ * to use (in this case, /app/view/Pages/home.ctp)...
  */
 	Router::connect('/', array(
 		'controller' => 'tops', 
@@ -37,6 +37,18 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'alcaldez'
 	));
+	Router::connect('/gallery', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'gallery'
+	));
+	Router::connect('/government', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'government'
+	));
+	Router::connect('/tourism', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'tourism'
+	));
 	Router::connect('/superadmin/login', array(
 		'controller' => 'users', 
 		'action'     => 'superadmin_login', 
@@ -49,9 +61,9 @@
 		'controller' => 'projects', 
 		'action'     => 'superadmin_project_add', 
 	));
-	Router::connect('/admin/projects/view', array(
+	Router::connect('/admin/projects/list', array(
 		'controller' => 'pages', 
-		'action'     => 'display', 'admin_view_projects'
+		'action'     => 'display', 'admin_list_projects'
 	));
 	Router::connect('/admin/projects/edit', array(
 		'controller' => 'pages', 
@@ -61,9 +73,9 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'admin_add_aboutus'
 	));
-	Router::connect('/admin/about-us/view', array(
+	Router::connect('/admin/about-us/list', array(
 		'controller' => 'pages', 
-		'action'     => 'display', 'admin_view_aboutus'
+		'action'     => 'display', 'admin_list_aboutus'
 	));
 	Router::connect('/admin/about-us/edit', array(
 		'controller' => 'pages', 
@@ -73,9 +85,9 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'admin_add_alcaldez'
 	));
-	Router::connect('/admin/alcaldez/view', array(
+	Router::connect('/admin/alcaldez/list', array(
 		'controller' => 'pages', 
-		'action'     => 'display', 'admin_view_alcaldez'
+		'action'     => 'display', 'admin_list_alcaldez'
 	));
 	Router::connect('/admin/alcaldez/edit', array(
 		'controller' => 'pages', 
@@ -87,8 +99,11 @@
 	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
 	Router::connect('/admin/captain/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_captain'));
 	Router::connect('/admin/councilor/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_councilor'));
-	Router::connect('/admin/government/view', array('controller' => 'pages', 'action' => 'display', 'admin_view_government'));
-	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));	
+	Router::connect('/admin/government/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_government'));
+	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));
+	Router::connect('/admin/tourism/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_tourism'));
+	Router::connect('/admin/tourism/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_tourism'));
+	Router::connect('/admin/tourism/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_tourism'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

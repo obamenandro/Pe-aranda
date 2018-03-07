@@ -34,9 +34,9 @@
                             <span>Add Projects</span>
                         </div>
                     </a>
-                    <a href="/admin/projects/view" class="admin-sidebar__link">
+                    <a href="/admin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Projects</span>
+                            <span>List Projects</span>
                         </div>
                     </a>
                 </div>
@@ -51,14 +51,29 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/government/add" class="admin-sidebar__link">
+                    <a href="/admin/mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
+                            <span>Edit Mayor</span>
                         </div>
                     </a>
-                    <a href="/admin/government/view" class="admin-sidebar__link">
+                    <a href="/admin/vice-mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Government</span>
+                            <span>Edit Vice Mayor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Captain</span>
+                        </div>
+                    </a>
+                    <a href="/admin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/government/list" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>List Government</span>
                         </div>
                     </a>
                 </div>
@@ -80,7 +95,7 @@
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Tourism</span>
+                            <span>List Tourism</span>
                         </div>
                     </a>
                 </div>
@@ -102,7 +117,7 @@
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
+                            <span>List Services</span>
                         </div>
                     </a>
                 </div>
@@ -122,9 +137,9 @@
                             <span>Add Gallery</span>
                         </div>
                     </a>
-                    <a href="/admin/gallery/view" class="admin-sidebar__link">
+                    <a href="/admin/gallery/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Gallery</span>
+                            <span>List Gallery</span>
                         </div>
                     </a>
                 </div>
@@ -144,9 +159,9 @@
                             <span>Add About us</span>
                         </div>
                     </a>
-                    <a href="/admin/about-us/view" class="admin-sidebar__link">
+                    <a href="/admin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View About us</span>
+                            <span>List About us</span>
                         </div>
                     </a>
                 </div>
@@ -166,9 +181,9 @@
                             <span>Add Alcaldez</span>
                         </div>
                     </a>
-                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Alcaldez</span>
+                            <span>List Alcaldez</span>
                         </div>
                     </a>
                 </div>
@@ -176,7 +191,6 @@
         </ul>
     </nav>
 </aside>
-
 
 <div class="admin-form">
     <form class="form-field">

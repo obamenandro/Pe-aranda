@@ -94,6 +94,10 @@ class PagesController extends AppController {
 		
 	}
 
+	public function tourism() {
+		
+	}
+
 	public function admin_login() {
 		
 	}
@@ -102,7 +106,7 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_view_projects() {
+	public function admin_list_projects() {
 		
 	}
 
@@ -118,7 +122,7 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_view_aboutus() {
+	public function admin_list_aboutus() {
 		
 	}
 
@@ -130,7 +134,7 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_view_alcaldez() {
+	public function admin_list_alcaldez() {
 		
 	}
 
@@ -142,7 +146,7 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_view_gallery() {
+	public function admin_list_gallery() {
 		
 	}
 
@@ -166,7 +170,19 @@ class PagesController extends AppController {
 		
 	}
 
-	public function admin_view_government() {
+	public function admin_list_government() {
+		
+	}
+
+	public function admin_add_tourism() {
+		
+	}
+
+	public function admin_edit_tourism() {
+		
+	}
+
+	public function admin_list_tourism() {
 		
 	}
 }

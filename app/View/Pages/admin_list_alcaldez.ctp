@@ -34,9 +34,9 @@
                             <span>Add Projects</span>
                         </div>
                     </a>
-                    <a href="/admin/projects/view" class="admin-sidebar__link">
+                    <a href="/admin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Projects</span>
+                            <span>List Projects</span>
                         </div>
                     </a>
                 </div>
@@ -51,14 +51,29 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/admin/government/add" class="admin-sidebar__link">
+                    <a href="/admin/mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
+                            <span>Edit Mayor</span>
                         </div>
                     </a>
-                    <a href="/admin/government/view" class="admin-sidebar__link">
+                    <a href="/admin/vice-mayor/edit" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Government</span>
+                            <span>Edit Vice Mayor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Edit Captain</span>
+                        </div>
+                    </a>
+                    <a href="/admin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
+                        </div>
+                    </a>
+                    <a href="/admin/government/list" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>List Government</span>
                         </div>
                     </a>
                 </div>
@@ -80,7 +95,7 @@
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Tourism</span>
+                            <span>List Tourism</span>
                         </div>
                     </a>
                 </div>
@@ -102,7 +117,7 @@
                     </a>
                     <a href="/admin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Services</span>
+                            <span>List Services</span>
                         </div>
                     </a>
                 </div>
@@ -122,9 +137,9 @@
                             <span>Add Gallery</span>
                         </div>
                     </a>
-                    <a href="/admin/gallery/view" class="admin-sidebar__link">
+                    <a href="/admin/gallery/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Gallery</span>
+                            <span>List Gallery</span>
                         </div>
                     </a>
                 </div>
@@ -144,9 +159,9 @@
                             <span>Add About us</span>
                         </div>
                     </a>
-                    <a href="/admin/about-us/view" class="admin-sidebar__link">
+                    <a href="/admin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View About us</span>
+                            <span>List About us</span>
                         </div>
                     </a>
                 </div>
@@ -166,9 +181,9 @@
                             <span>Add Alcaldez</span>
                         </div>
                     </a>
-                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>View Alcaldez</span>
+                            <span>List Alcaldez</span>
                         </div>
                     </a>
                 </div>
@@ -183,21 +198,21 @@
             <thead>
                 <tr class="admin-table__head">
                     <th class="admin-table__title">ID</th>
-                    <th class="admin-table__title">Title</th>
-                    <th class="admin-table__title">Description</th>
-                    <th class="admin-table__title">Date</th>
+                    <th class="admin-table__title">Name</th>
+                    <th class="admin-table__title">Years In Service</th>
+                    <th class="admin-table__title">Position</th>
                     <th class="admin-table__title" colspan="2">Action</th>
                 <tr>
             <thead>
             <tbody>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">1</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -206,12 +221,12 @@
                 </tr>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">2</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -220,12 +235,12 @@
                 </tr>
                 <tr class="admin-table__row">
                     <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -233,13 +248,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">4</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -247,13 +262,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">5</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -261,13 +276,13 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">First Title</td>
-                    <td class="admin-table__result">First Description</td>
-                    <td class="admin-table__result">2018-02-29</td>
+                    <td class="admin-table__result">6</td>
+                    <td class="admin-table__result">Jose Rizal</td>
+                    <td class="admin-table__result">Pogi si Rizal</td>
+                    <td class="admin-table__result">Dog style</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/projects/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>

@@ -34,7 +34,7 @@
                             <span>Add Projects</span>
                         </div>
                     </a>
-                    <a href="/admin/projects/view" class="admin-sidebar__link">
+                    <a href="/admin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Projects</span>
                         </div>
@@ -71,7 +71,7 @@
                             <span>Add Councilor</span>
                         </div>
                     </a>
-                    <a href="/admin/government/view" class="admin-sidebar__link">
+                    <a href="/admin/government/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Government</span>
                         </div>
@@ -137,7 +137,7 @@
                             <span>Add Gallery</span>
                         </div>
                     </a>
-                    <a href="/admin/gallery/view" class="admin-sidebar__link">
+                    <a href="/admin/gallery/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Gallery</span>
                         </div>
@@ -159,7 +159,7 @@
                             <span>Add About us</span>
                         </div>
                     </a>
-                    <a href="/admin/about-us/view" class="admin-sidebar__link">
+                    <a href="/admin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View About us</span>
                         </div>
@@ -181,7 +181,7 @@
                             <span>Add Alcaldez</span>
                         </div>
                     </a>
-                    <a href="/admin/alcaldez/view" class="admin-sidebar__link">
+                    <a href="/admin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>View Alcaldez</span>
                         </div>
