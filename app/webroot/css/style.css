@@ -837,6 +837,9 @@ body {
 
 .gallery__item.gallery__item--tourism {
   width: 100%; }
+  @media screen and (max-width: 767px) {
+    .gallery__item.gallery__item--tourism {
+      margin-bottom: 10%; } }
   .gallery__item.gallery__item--tourism .gallery__image-title {
     font-size: 18px;
     font-weight: bold;
