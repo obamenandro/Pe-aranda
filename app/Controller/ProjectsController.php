@@ -20,9 +20,9 @@ class ProjectsController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
-        $this->layout = 'admin';
     }
     public function superadmin_project_add() {
+        $this->layout = "admin";
         $this->Project = ClassRegistry::init('Project');
         if ($this->request->is("POST")) {
             $data = $this->request->data;
@@ -69,6 +69,7 @@ class ProjectsController extends AppController {
     }
 
     public function superadmin_project_list() {
+        $this->layout = "admin";
         $this->Paginator->settings = [
             'limit' => 5
         ];
@@ -77,6 +78,7 @@ class ProjectsController extends AppController {
     }
 
     public function superadmin_project_edit($id) {
+        $this->layout = "admin";
         $this->Project->id = $id;
         if (!$this->Project->exists()) {
             return $this->redirect('/superadmin/projects/list');
