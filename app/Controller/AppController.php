@@ -49,6 +49,9 @@ class AppController extends Controller {
 
 	public function beforeFilter() {
 		parent::beforeFilter();
+        if ($this->params['controller'] == 'users' && $this->params['action'] == "login") {
+            return $this->redirect('/superadmin/login');
+        }
 	   	$this->Auth->allow(
 			'home',
 			'superadmin_login',
