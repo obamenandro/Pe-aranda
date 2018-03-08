@@ -1,4 +1,3 @@
-<?php  $this->layout = false; ?>
 <?php echo $this->Html->css('/node_modules/font-awesome/css/font-awesome.min'); ?>
 <?php echo $this->Html->css('style'); ?>
 
