@@ -21,8 +21,7 @@ class UsersController extends AppController {
                 return $this->redirect('/superadmin/login');
             }
             if ($this->Auth->login()) {
-            	die();
-                return $this->redirect('/superadmin/members');
+                return $this->redirect('/superadmin/projects/list');
             } else {
             	$this->Session->setFlash(__('Invalid username or password.'), 'error');
             	return $this->redirect('/superadmin/login');
@@ -31,7 +30,7 @@ class UsersController extends AppController {
 	}
 
 	public function superadmin_logout() {
-		$this->Session->destroy(); 
+		$this->Session->destroy();
 		return $this->redirect('/superadmin/login');
 	}
 }

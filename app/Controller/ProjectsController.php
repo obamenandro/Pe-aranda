@@ -78,9 +78,9 @@ class ProjectsController extends AppController {
 
     public function superadmin_project_edit($id) {
         $this->Project->id = $id;
-        if (!$this->Project->exists()) {  
+        if (!$this->Project->exists()) {
             return $this->redirect('/superadmin/projects/list');
-        } 
+        }
 
         $project = $this->Project->find('first', [
             'conditions' => ['Project.id' => $id]
@@ -90,38 +90,39 @@ class ProjectsController extends AppController {
         }
 
         if ($this->request->is(['POST', 'PUT'])) {
-            $this->Project->id = $id;
-            if ($this->Project->save($this->request->data['Project'])) {
-                //saving image
-                if ($this->request->data['Upload']['image']['size'] != 0) {
-                    $dir  = APP."webroot/img/uploads/projects/";
-                    //check file if exits if not create dir
-                    if (!file_exists($dir)) {
-                        mkdir($dir, 0777, true);
-                    }
-                    
-                    $ext  = explode(".", $this->request->data['Upload']['image']['name']);
-                    $dir2 = $dir . $id . "/";
+            $this->Project->set($this->request->data['Project']);
+            if ($this->Project->validates()) {
+                $this->Project->id = $id;
+                if ($this->Project->save($this->request->data['Project'])) {
+                    //saving image
+                    if ($this->request->data['Upload']['image']['size'] != 0) {
+                        $dir  = APP."webroot/img/uploads/projects/";
+                        //check file if exits if not create dir
+                        if (!file_exists($dir)) {
+                            mkdir($dir, 0777, true);
+                        }
 
-                    if (!file_exists($dir . $id)) {
-                        mkdir($dir . $id . "/", 0777, true);
+                        $ext  = explode(".", $this->request->data['Upload']['image']['name']);
+                        $dir2 = $dir . $id . "/";
+
+                        if (!file_exists($dir . $id)) {
+                            mkdir($dir . $id . "/", 0777, true);
+                        }
+                        $filename = $this->Image->save(
+                            $this->request->data['Upload']['image']['tmp_name'],
+                            $dir2, $ext[1]);
+                        if (!empty($filename)) {
+                            $path = '/img/uploads/projects/'.$id."/".$filename;
+                            $this->Project->id = $id;
+                            $this->Project->saveField('image', $path);
+                        } else {
+                            $this->Session->setFlash(__('Failed to save image'), 'error');
+                        }
                     }
-                    $filename = $this->Image->save(
-                        $this->request->data['Upload']['image']['tmp_name'],
-                        $dir2, $ext[1]);
-                    if (!empty($filename)) {
-                        $path = '/img/uploads/projects/'.$id."/".$filename;
-                        $this->Project->id = $id;
-                        $this->Project->saveField('image', $path);
-                    } else {
-                        $this->Session->setFlash(__('Failed to save image'), 'error');
-                    }
+                    $this->Session->setFlash(__('Project has been successfully updated.'), 'success');
+                    return $this->redirect('/superadmin/projects/edit/'.$id);
                 }
-                
-                $this->Session->setFlash(__('Project has been successfully updated.'), 'success');
-                return $this->redirect('/superadmin/projects/edit/'.$id);
             }
-
         }
 
         if (!$this->request->data) {
