@@ -1,7 +1,7 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <form class="form-field form-field--gallery">
+    <form class="form-field">
         <div class="form-field__gallery-wrapper">   
             <div class="form-field__gallery-box">
                 <div class="form-field__list form-field__list--error">

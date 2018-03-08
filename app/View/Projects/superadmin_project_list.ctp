@@ -55,3 +55,20 @@
         </div>
     </div> 
 </div>
+
+<div class="modal-confirmation" style="display: block">
+    <div class="modal-confirmation__content">
+        <div class="modal-confirmation__close">
+            <button class="modal-confirmation__close-btn">x</button>
+        </div>
+        <div class="modal-confirmation__header">
+            <span>Confirmation</span>
+        </div>
+        <div class="modal-confirmation__body">
+            <span>Are you sure you want to delete?</span>
+        </div>
+        <div class="modal-confirmation__button">
+            <button class="modal-confirmation__delete-btn">Delete</button>
+        </div>
+    </div>
+</div>

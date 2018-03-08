@@ -15,16 +15,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Projects</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/projects/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Projects</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -43,16 +37,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Government</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Government</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -71,16 +59,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Tourism</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Tourism</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -99,16 +81,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Services</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -127,16 +103,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Services</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/projects" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Services</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -155,16 +125,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add About us</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/about-us/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List About us</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>
@@ -183,16 +147,10 @@
                         <div class="admin-sidebar__item-text">
                             <span>Add Alcaldez</span>
                         </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
-                        </div>
                     </a>
                     <a href="/superadmin/alcaldez/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Alcaldez</span>
-                        </div>
-                        <div class="admin-sidebar__item-icon">
-                            <i class="fa fa-chevron-right"></i>
                         </div>
                     </a>
                 </div>

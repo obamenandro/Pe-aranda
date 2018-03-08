@@ -87,7 +87,6 @@
 
     &__gallery-box {
         display: inline-block;
-        width: 33.3%;
         vertical-align: top;
         padding-bottom: 30px;
     }
@@ -136,19 +135,6 @@
     .form-field__input,
     .form-field__textarea {
         border: 1px solid #E8491D;
-    }
-}
-
-.form-field.form-field--gallery {
-    padding: 40px 25px;
-
-    .form-field__image {
-        height: 200px;
-    }
-
-    .form-field__label {
-        width: 70%;
-        padding-bottom: 7px;     
     }
 }
 
