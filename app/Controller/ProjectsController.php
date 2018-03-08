@@ -10,14 +10,6 @@ class ProjectsController extends AppController {
  *
  * @var mixed
  */
-
-    public $components = [
-        'Flash',
-        'Image',
-        'Paginator',
-        'Session'
-    ];
-
     public function beforeFilter() {
         parent::beforeFilter();
         $this->layout = "admin";

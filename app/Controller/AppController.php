@@ -31,8 +31,11 @@ App::uses('Controller', 'Controller');
  * @link		https://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components = array(
+	public $components = [
 	    'DebugKit.Toolbar',
+	    'Flash',
+        'Image',
+        'Paginator',
 	    'Session',
 	    'Auth' => [
 	    	'authenticate' => [
@@ -45,7 +48,7 @@ class AppController extends Controller {
 	    		]
 	    	]
 	    ]
-	);
+	];
 
 	public function beforeFilter() {
 		parent::beforeFilter();
