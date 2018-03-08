@@ -61,7 +61,4 @@
             <input type="submit" value="Update" class="form-field__button-register">
         </div>  
     <?= $this->Form->end(); ?>
-
 </div>
-<?php echo $this->Html->script('jquery-3.1.0.min'); ?>
-<?php echo $this->Html->script('common'); ?>

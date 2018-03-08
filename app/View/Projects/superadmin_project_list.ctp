@@ -69,5 +69,3 @@
         </div>
     </div> 
 </div>
-<?php echo $this->Html->script('jquery-3.1.0.min'); ?>
-<?php echo $this->Html->script('common'); ?>

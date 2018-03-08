@@ -63,5 +63,3 @@
         </div>
     <?= $this->Form->end(); ?>
 </div>
-<?= $this->Html->script('jquery-3.1.0.min'); ?>
-<?= $this->Html->script('common'); ?>
