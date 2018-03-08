@@ -51,21 +51,6 @@
                         echo $this->Paginator->next(' next > ', array(), null, array('class' => 'next disabled'));
                     }
                 ?>
-                <!-- <li class="pagination__list">
-                    <a href="" class="pagination__link"><i class="fa fa-chevron-left"></i></a>
-                </li>
-                <li class="pagination__list">
-                    <a href="" class="pagination__link pagination__link--active">1</a>
-                </li>
-                <li class="pagination__list">
-                    <a href="" class="pagination__link">2</a>
-                </li>
-                <li class="pagination__list">
-                    <a href="" class="pagination__link">3</a>
-                </li>
-                <li class="pagination__list">
-                    <a href="" class="pagination__link"><i class="fa fa-chevron-right"></i></a>
-                </li> -->
             </ul>
         </div>
     </div> 

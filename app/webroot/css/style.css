@@ -552,6 +552,10 @@ body {
     padding: 7px 20px;
     color: #ffffff;
     font-size: 14px; }
+    .header-admin__button:hover {
+      opacity: 0.7;
+      transition: .6s;
+      cursor: pointer; }
 
 .admin-sidebar {
   width: 18%;
@@ -570,7 +574,8 @@ body {
     padding: 15px;
     cursor: pointer; }
     .admin-sidebar__link:hover {
-      background: #E8491D; }
+      background: #E8491D;
+      transition: 0.7s; }
   .admin-sidebar__item-text {
     display: inline-block;
     font-size: 14px;
@@ -985,3 +990,35 @@ body {
     vertical-align: middle;
     padding: 15px 0;
     word-break: break-all; }
+
+.success-message {
+  margin: 150px 0 0 38%;
+  width: 45%;
+  text-align: center;
+  color: green;
+  border: 1px green solid;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff; }
+  .success-message__icon {
+    font-size: 30px; }
+  .success-message__message {
+    font-size: 20px; }
+  .success-message__button {
+    display: block;
+    margin: 50px 0 60px;
+    text-align: center; }
+  .success-message__link {
+    display: inline-block;
+    width: 25%;
+    vertical-align: middle;
+    background: #35424a;
+    padding: 10px;
+    border-radius: 8px;
+    color: #ffffff;
+    margin-right: 10px;
+    text-decoration: none; }
+    .success-message__link:hover {
+      opacity: 0.7;
+      transition: .6s; }

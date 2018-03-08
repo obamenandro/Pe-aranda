@@ -201,4 +201,8 @@ class PagesController extends AppController {
 	public function admin_list_services() {
 		
 	}
+
+	public function success_page() {
+		
+	}
 }

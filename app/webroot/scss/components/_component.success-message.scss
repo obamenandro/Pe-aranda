@@ -1,0 +1,42 @@
+.success-message {
+    margin: 150px 0 0 38%;
+    width: 45%;
+    text-align: center;
+    color: green;
+    border: 1px green solid;
+    border-radius: 8px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #ffffff;
+
+    &__icon {
+        font-size: 30px;
+    }
+
+    &__message {
+        font-size: 20px;
+    }
+
+    &__button {
+        display: block;
+        margin: 50px 0 60px;
+        text-align: center;
+    }
+
+    &__link {
+        display: inline-block;
+        width: 25%;
+        vertical-align: middle;
+        background: #35424a;
+        padding: 10px;
+        border-radius: 8px;
+        color: #ffffff;
+        margin-right: 10px;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.7;
+            transition: .6s;
+        }
+    }
+}

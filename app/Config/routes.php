@@ -138,7 +138,8 @@
 	Router::connect('/admin/tourism/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_tourism'));
 	Router::connect('/admin/services/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_services'));
 	Router::connect('/admin/services/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_services'));
-	Router::connect('/admin/services/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_services'));	
+	Router::connect('/admin/services/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_services'));
+	Router::connect('/admin/success', array('controller' => 'pages', 'action' => 'display', 'success_page'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
