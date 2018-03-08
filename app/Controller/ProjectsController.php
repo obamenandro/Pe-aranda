@@ -22,7 +22,7 @@ class ProjectsController extends AppController {
         parent::beforeFilter();
     }
     public function superadmin_project_add() {
-        $this->layout = "admin";
+        // $this->layout = "admin";
         $this->Project = ClassRegistry::init('Project');
         if ($this->request->is("POST")) {
             $data = $this->request->data;
