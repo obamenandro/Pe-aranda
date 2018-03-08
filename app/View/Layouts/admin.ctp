@@ -37,11 +37,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     ?>
 </head>
 <body>
-    <?= $this->element('header'); ?>
+    <?= $this->element('admin_header'); ?>
     <?= $this->element('sidebar'); ?>
     <?= $this->fetch('content'); ?>
     <?= $this->Html->script('common'); ?>
 </body>
-asdasdasdasd
 </html>
 <?php die(); ?>

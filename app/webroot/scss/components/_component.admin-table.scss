@@ -50,3 +50,13 @@
 .admin-table__link.admin-table__link--delete {
     background-color: #E8491D;
 }
+
+.admin-table__wrapper.admin-table__wrapper--services {
+    .admin-table__title {
+        width: 16.66%;
+    }
+
+    .admin-table__action {
+        margin: 0;
+    }
+}

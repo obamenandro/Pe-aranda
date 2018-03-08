@@ -98,6 +98,10 @@ class PagesController extends AppController {
 		
 	}
 
+	public function services() {
+		
+	}
+
 	public function admin_login() {
 		
 	}
@@ -183,6 +187,18 @@ class PagesController extends AppController {
 	}
 
 	public function admin_list_tourism() {
+		
+	}
+
+	public function admin_add_services() {
+		
+	}
+
+	public function admin_edit_services() {
+		
+	}
+
+	public function admin_list_services() {
 		
 	}
 }

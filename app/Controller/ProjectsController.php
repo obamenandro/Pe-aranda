@@ -20,9 +20,9 @@ class ProjectsController extends AppController {
 
     public function beforeFilter() {
         parent::beforeFilter();
+        $this->layout = "admin";
     }
     public function superadmin_project_add() {
-        // $this->layout = "admin";
         $this->Project = ClassRegistry::init('Project');
         if ($this->request->is("POST")) {
             $data = $this->request->data;

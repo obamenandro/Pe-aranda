@@ -700,6 +700,12 @@ body {
     width: 70%;
     padding-bottom: 7px; }
 
+.form-field.form-field--services .form-field__label {
+  width: 20%; }
+
+.form-field.form-field--services .form-field__input-wrapper {
+  width: 80%; }
+
 .admin-table {
   padding: 50px 30px; }
   .admin-table__wrapper {
@@ -734,6 +740,12 @@ body {
 
 .admin-table__link.admin-table__link--delete {
   background-color: #E8491D; }
+
+.admin-table__wrapper.admin-table__wrapper--services .admin-table__title {
+  width: 16.66%; }
+
+.admin-table__wrapper.admin-table__wrapper--services .admin-table__action {
+  margin: 0; }
 
 .pagination {
   padding: 50px 0 0;
@@ -940,3 +952,27 @@ body {
 
 .flash-message__alert.flash-message__alert--error {
   background: #d83535; }
+
+.services {
+  padding: 50px 0 100px; }
+  .services__list:first-child {
+    margin-bottom: 10px;
+    background: #35424a;
+    color: #ffffff; }
+  .services__list:nth-child(2n) {
+    background: #ffffff; }
+  .services__item-title {
+    display: inline-block;
+    width: 20%;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0; }
+  .services__item-result {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 0;
+    word-break: break-all; }

@@ -2,25 +2,27 @@
 
 <div class="admin-form">
     <div class="admin-table">
-        <table class="admin-table__wrapper">
+        <table class="admin-table__wrapper admin-table__wrapper--services">
             <thead>
                 <tr class="admin-table__head">
-                    <th class="admin-table__title">ID</th>
-                    <th class="admin-table__title">Name</th>
-                    <th class="admin-table__title">Years In Service</th>
-                    <th class="admin-table__title">Position</th>
+                    <th class="admin-table__title">Type of FrontLine Service</th>
+                    <th class="admin-table__title">FEES</th>
+                    <th class="admin-table__title">FORMS</th>
+                    <th class="admin-table__title">Processing Time</th>
+                    <th class="admin-table__title">Office Responsible</th>
                     <th class="admin-table__title" colspan="2">Action</th>
                 <tr>
             <thead>
             <tbody>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">1</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -28,13 +30,14 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">2</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -42,13 +45,14 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">3</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -56,13 +60,14 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">4</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -70,13 +75,14 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">5</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>
@@ -84,13 +90,14 @@
                     </td>
                 </tr>
                 <tr class="admin-table__row">
-                    <td class="admin-table__result">6</td>
-                    <td class="admin-table__result">Jose Rizal</td>
-                    <td class="admin-table__result">Pogi si Rizal</td>
-                    <td class="admin-table__result">Dog style</td>
+                    <td class="admin-table__result">Legalization</td>
+                    <td class="admin-table__result">150.00</td>
+                    <td class="admin-table__result">Application Form</td>
+                    <td class="admin-table__result">31 minutes</td>
+                    <td class="admin-table__result">Office of the Mayor</td>
                     <td class="admin-table__result" colspan="2">
                         <div class="admin-table__action">
-                            <a href="/admin/alcaldez/edit" class="admin-table__link">Edit</a>
+                            <a href="/admin/government/edit" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
                             <a class="admin-table__link admin-table__link--delete">Delete</a>

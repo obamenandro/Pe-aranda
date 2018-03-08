@@ -1,43 +1,38 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <form class="form-field">
+    <form class="form-field form-field--services">
         <div class="form-field__list form-field__list--error">
-            <label class="form-field__label">Name :</label>
+            <label class="form-field__label">Name of Service :</label>
             <div class="form-field__input-wrapper">
                 <input type="text" class="form-field__input">
                 <span class="form-field__error">error message</span>
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Birthday :</label>
+            <label class="form-field__label">Fees :</label>
             <div class="form-field__input-wrapper">
-                <input type="date" class="form-field__input">
+                <input type="text" class="form-field__input">
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Message :</label>
+            <label class="form-field__label">Forms :</label>
             <div class="form-field__input-wrapper">
-                <textarea class="form-field__textarea"></textarea>
+                <input type="text" class="form-field__input">
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Position :</label>
+            <label class="form-field__label">Processing Time :</label>
             <div class="form-field__input-wrapper">
-                <input type="text" value="Barangay Captain" class="form-field__input" disabled>
+                <input type="text" class="form-field__input">
             </div>
         </div>
         <div class="form-field__list form-field__list--textarea">
-            <label class="form-field__label">Image :</label>
+            <label class="form-field__label">Office Responsible :</label>
             <div class="form-field__input-wrapper">
-                <input type="file" hidden id="input-file">
-                <a class="form-field__upload">Browse Image</a>
-                <span class="form-field__upload-text">Image name</span>
-                <div class="form-field__image-wrapper">
-                    <img src="/images/placeholder/placeholder.png" class="form-field__image">
-                </div>
+                <input type="text" class="form-field__input">
             </div>
-        </div>  
+        </div>
         <div class="form-field__button">
             <input type="submit" value="Register" class="form-field__button-register">
         </div>
