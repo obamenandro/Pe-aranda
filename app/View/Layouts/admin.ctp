@@ -31,10 +31,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <?php
         echo $this->Html->meta('icon');
         echo $this->fetch('meta');
-        echo $this->Html->css('/node_modules/font-awesome/css/font-awesome.min');
+        echo $this->Html->css('/plugins/font-awesome/css/font-awesome.min');
         echo $this->Html->css('style');
         echo $this->Html->script('jquery-3.1.0.min');
-        echo $this->Html->script('/node_modules/scrollreveal/dist/scrollreveal.min');
     ?>
 </head>
 <body>

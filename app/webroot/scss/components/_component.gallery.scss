@@ -70,6 +70,10 @@
 
 .gallery__item.gallery__item--tourism {
     width: 100%;   
+    
+    @media screen and (max-width: 767px ) {
+        margin-bottom: 10%;
+    }
 
     .gallery__image-title {
         font-size: 18px;

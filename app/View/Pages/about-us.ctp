@@ -8,10 +8,6 @@
                 <a class="newsletter__link" href="/alcaldez">Alcaldez</a>
             </div>
         </div>
-		<form class="form">
-			<input type="email" placeholder="Enter Email ..." class="form__input">
-			<button type="submit" class="button_1 form__button">Subscribe</button>
-		</form>
 	</div>
 </section>
 
