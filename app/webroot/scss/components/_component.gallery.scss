@@ -40,4 +40,40 @@
         text-align: center;
         padding: 10px 0;
     }
+
+    &__image-wrapper {
+        display: inline-block;
+        margin-right: 5%;
+        width: 45%;
+        vertical-align: top;
+        
+        @media screen and (max-width: 767px ) {
+            margin-right: 0;
+            width: 100%;
+        }
+    }
+
+    &__description {
+        display: inline-block;
+        width: 50%;
+        vertical-align: top;
+
+        @media screen and (max-width: 767px ) {
+            width: 100%;
+        }
+    }
+
+    &__image-detail {
+        font-size: 14px;
+    }
+}
+
+.gallery__item.gallery__item--tourism {
+    width: 100%;   
+
+    .gallery__image-title {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+    }
 }

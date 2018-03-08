@@ -816,6 +816,31 @@ body {
     font-size: 16px;
     text-align: center;
     padding: 10px 0; }
+  .gallery__image-wrapper {
+    display: inline-block;
+    margin-right: 5%;
+    width: 45%;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .gallery__image-wrapper {
+        margin-right: 0;
+        width: 100%; } }
+  .gallery__description {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .gallery__description {
+        width: 100%; } }
+  .gallery__image-detail {
+    font-size: 14px; }
+
+.gallery__item.gallery__item--tourism {
+  width: 100%; }
+  .gallery__item.gallery__item--tourism .gallery__image-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left; }
 
 .government {
   padding: 50px 0; }
@@ -911,4 +936,4 @@ body {
     margin-right: 10px; }
 
 .flash-message__alert.flash-message__alert--error {
-  background: red; }
+  background: #d83535; }

@@ -7,41 +7,59 @@
 <div class="gallery">
     <div class="container">
         <ul class="gallery__list">
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/6.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/4.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/10.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/4.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/6.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/5.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/7.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/9.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
-            </li>
-            <li class="gallery__item">
-                <img class="gallery__image" src="/images/events/6.jpg">
-                <span class="gallery__image-title">Wheelchairs Giving from DOH</span>
+            <li class="gallery__item gallery__item--tourism">
+                <div class="gallery__image-wrapper">
+                    <img class="gallery__image" src="/images/events/6.jpg">
+                </div>
+                <div class="gallery__description">
+                    <h3 class="gallery__image-title">Wheelchairs Giving from DOH</h3>
+                    <p class="gallery__image-detail">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+                </div>
             </li>
         </ul>
     </div>
