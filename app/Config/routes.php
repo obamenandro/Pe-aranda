@@ -110,8 +110,15 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'admin_edit_alcaldez'
 	));
-
-	
+	Router::connect('/superadmin/mayor/edit', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_edit_mayor'
+	));
+		
+	Router::connect('/superadmin/vicemayor/edit', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_edit_vicemayor'
+	));
 	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
 	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
 	Router::connect('/admin/captain/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_captain'));
