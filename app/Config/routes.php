@@ -38,9 +38,21 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'alcaldez'
 	));
-	Router::connect('/gallery', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'gallery'
+	Router::connect('/superadmin/galleries/add', array(
+		'controller' => 'galleries', 
+		'action'     => 'superadmin_add'
+	));
+	Router::connect('/superadmin/galleries/', array(
+		'controller' => 'galleries', 
+		'action'     => 'superadmin_index'
+	));
+	Router::connect('/superadmin/galleries/edit/*', array(
+		'controller' => 'galleries', 
+		'action'     => 'superadmin_edit'
+	));
+	Router::connect('/superadmin/galleries/delete/*', array(
+		'controller' => 'galleries', 
+		'action'     => 'superadmin_delete'
 	));
 	Router::connect('/government', array(
 		'controller' => 'pages', 

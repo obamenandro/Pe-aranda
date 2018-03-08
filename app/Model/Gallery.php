@@ -1,33 +1,33 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Project Model
+ * Gallery Model
  *
  */
-class Project extends AppModel {
+class Gallery extends AppModel {
 
 /**
  * Validation rules
  *
  * @var array
  */
-    public $validate = [
+	public $validate = [
         'title' => [
             'notBlank' => [
                 'rule'    => ['notBlank'],
-                'message' => 'Project title is required.'
+                'message' => 'Gallery title is required.'
             ],
         ],
         'description' => [
             'notBlank' => [
                 'rule'    => ['notBlank'],
-                'message' => 'Project description is required.',
+                'message' => 'Gallery description is required.',
             ],
         ],
         'image' => [
             'notBlank' => [
                 'rule' => ['notBlank'],
-                'message' => 'Project image is required.',
+                'message' => 'Gallery image is required.',
             ],
             'file_size' => [
                 'rule'    => ['fileSize', '<=', '1MB'],
