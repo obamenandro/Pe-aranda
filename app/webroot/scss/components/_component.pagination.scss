@@ -4,6 +4,7 @@
 
     &__list {
         display: inline-flex;
+        margin: 0 5px;        
         vertical-align: middle;
         width: 25px;
         height: 25px;
@@ -12,7 +13,7 @@
         align-items: center;
     }
 
-    &__link {
+    a {
         display: inline-flex;
         width: 25px;
         text-decoration: none;
@@ -29,7 +30,7 @@
     }
 }
 
-.pagination__link.pagination__link--active {
+.pagination__list--active {
     color: #ffffff;
     background-color: #E8491D;
     border-radius: 3px;
@@ -37,4 +38,9 @@
 
 .pagination.pagination--gallery {
     padding: 25px 0 50px;
+}
+
+.pagination .next a,
+.pagination .prev a {
+    width: 75px;
 }

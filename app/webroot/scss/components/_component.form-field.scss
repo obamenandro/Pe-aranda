@@ -133,7 +133,8 @@
 }
 
 .form-field__list.form-field__list--error {
-    .form-field__input {
+    .form-field__input,
+    .form-field__textarea {
         border: 1px solid #E8491D;
     }
 }

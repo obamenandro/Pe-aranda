@@ -1,6 +1,7 @@
-<?= $this->Session->flash(); ?>
+
 <div class="admin-form">
     <div class="admin-table">
+        <?= $this->Session->flash(); ?>
         <table class="admin-table__wrapper">
             <thead>
                 <tr class="admin-table__head">
@@ -43,8 +44,8 @@
                             'modulus'      => 5, 
                             'separator'    => '',
                             'tag'          => 'li',
-                            'currentClass' => 'pagination__link--active',
                             'class'        => 'pagination__list',
+                            'currentClass' => 'pagination__list--active',
                         ]);
                         // next
                         echo $this->Paginator->next(' next > ', array(), null, array('class' => 'next disabled'));

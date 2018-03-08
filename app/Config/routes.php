@@ -54,6 +54,10 @@
 		'controller' => 'galleries', 
 		'action'     => 'superadmin_delete'
 	));
+	Router::connect('/gallery', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'gallery'
+	));
 	Router::connect('/services', array(
 		'controller' => 'pages', 
 		'action'     => 'display', 'services'
