@@ -26,7 +26,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     <meta name="keywords" content="web design, affordable web design, professional web design">
     <meta name="author" content="Chris Rowel">
     <title>
-        <?php echo 'Peñaranda'; ?>
+        <?php echo 'Peñaranda Admin'; ?>
     </title>
     <?php
         echo $this->Html->meta('icon');
@@ -38,15 +38,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
     ?>
 </head>
 <body>
-
     <?= $this->element('header'); ?>
-
-    <div class="main-content">
-        <?= $this->fetch('content'); ?>
-    </div>
-
-    <?= $this->element('footer'); ?>
-
+    <?= $this->element('sidebar'); ?>
+    <?= $this->fetch('content'); ?>
     <?= $this->Html->script('common'); ?>
 </body>
 asdasdasdasd
