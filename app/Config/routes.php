@@ -54,6 +54,10 @@
 		'controller' => 'galleries', 
 		'action'     => 'superadmin_delete'
 	));
+	Router::connect('/services', array(
+		'controller' => 'pages', 
+		'action'     => 'display', 'services'
+	));
 	Router::connect('/government', array(
 		'controller' => 'pages', 
 		'action'     => 'display', 'government'
@@ -127,7 +131,10 @@
 	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));
 	Router::connect('/admin/tourism/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_tourism'));
 	Router::connect('/admin/tourism/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_tourism'));
-	Router::connect('/admin/tourism/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_tourism'));	
+	Router::connect('/admin/tourism/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_tourism'));
+	Router::connect('/admin/services/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_services'));
+	Router::connect('/admin/services/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_services'));
+	Router::connect('/admin/services/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_services'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
  */

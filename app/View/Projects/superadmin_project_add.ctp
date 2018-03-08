@@ -1,6 +1,3 @@
-<?php echo $this->Html->css('/node_modules/font-awesome/css/font-awesome.min'); ?>
-<?php echo $this->Html->css('style'); ?>
-
 <div class="admin-form">
     <?=
         $this->Form->create('Project', [
@@ -66,5 +63,3 @@
         </div>
     <?= $this->Form->end(); ?>
 </div>
-<?= $this->Html->script('jquery-3.1.0.min'); ?>
-<?= $this->Html->script('common'); ?>
