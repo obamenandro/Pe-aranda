@@ -105,5 +105,26 @@
     &__message-result {
         display: block;
         font-size: 14px;
+        word-break: break-all;
+    }
+
+    &__form-error {
+        display: none;
+        color: red;
+        font-size: 14px;
+    }
+
+    &__submit {
+        display: inline-block;
+        padding: 10px 30px;
+        background: #E8491D;
+        border-radius: 5px;
+        border: 1px solid #E8491D;
+        color: #ffffff;
+    }
+
+    &__form-button {
+        max-width: 180px;
+        margin: 10px auto;
     }
 }

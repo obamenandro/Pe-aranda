@@ -71,6 +71,10 @@
 			<div class="feedback__form-list">
 				<label class="feedback__label">Message:</label>
 				<textarea cols="30" rows="10" class="feedback__textarea"></textarea>
+				<span class="feedback__form-error"><?php echo __("you've reached 200 characters")?></span>
+			</div>
+			<div class="feedback__form-button">
+				<input type="submit" class="feedback__submit" value="submit">
 			</div>
 		</form>
 
@@ -109,4 +113,15 @@
 		sr.reveal('.boxes', { duration: 2000 }, 50);
 		sr.reveal('.boxes--expectation', { duration: 2000 }, 50);
 	}
+
+	$('.feedback__textarea').keyup(function(e){
+		var countLength = $(this).val().length;
+		if ( countLength >= 200 ) {
+			$('.feedback__form-error').show();
+			$(this).val($(this).val().substring(0, 200));
+		}
+		else {
+			$('.feedback__form-error').hide();
+		}
+	})
 </script>
