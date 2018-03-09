@@ -1,12 +1,12 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->flash() ?>
     <?= $this->Form->create('Gallery', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]) ?>
+        <?= $this->Session->flash() ?>
         <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
                 <div class="form-field__list <?php echo $this->Form->error('title') ? 'form-field__list--error' : '' ;?>">
