@@ -6,6 +6,7 @@
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field form-field--gallery"
     ]) ?>
+        <?= $this->Session->flash(); ?>
         <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
                 <div class="form-field__list form-field__list--error">

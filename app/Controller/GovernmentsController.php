@@ -212,7 +212,7 @@ class GovernmentsController extends AppController {
                         }
                     }
                     $this->Session->setFlash(__('Barangay Captain has been successfully added.'), 'success');
-                    return $this->redirect('superadmin/government/lists');
+                    return $this->redirect('/superadmin/government/lists');
                 }
             }
         }
@@ -221,7 +221,7 @@ class GovernmentsController extends AppController {
     public function superadmin_edit_captain($id) {
         $this->Government->id = $id;
         if (!$this->Government->exists()) {
-            return $this->redirect('superadmin/government/lists');
+            return $this->redirect('/superadmin/government/lists');
         }
 
         $captain = $this->Government->find('first', [

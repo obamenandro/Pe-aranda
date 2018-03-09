@@ -1,12 +1,12 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->flash(); ?>
     <?= $this->Form->create('Government', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]) ?>
+    <?= $this->Session->flash(); ?>
         <div class="form-field__list">
             <label class="form-field__label">Name :</label>
             <div class="form-field__input-wrapper">

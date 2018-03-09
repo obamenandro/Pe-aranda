@@ -1,15 +1,15 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->flash() ?>
     <?= $this->Form->create('Gallery', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]) ?>
+        <?= $this->Session->flash() ?>
         <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
-                <div class="form-field__list form-field__list--error">
+                <div class="form-field__list <?php echo $this->Form->error('title') ? 'form-field__list--error' : '' ;?>">
                     <label class="form-field__label">Title :</label>
                     <div class="form-field__input-wrapper">
                         <?=
@@ -25,7 +25,7 @@
                         <span class="form-field__error"><?= $this->Form->error('title'); ?></span>
                     </div>
                 </div>
-                <div class="form-field__list form-field__list--textarea">
+                <div class="form-field__list form-field__list--textarea <?php echo $this->Form->error('description') ? 'form-field__list--error' : '' ;?>">
                     <label class="form-field__label">Description :</label>
                     <div class="form-field__input-wrapper">
                         <?=

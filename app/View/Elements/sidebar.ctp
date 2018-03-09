@@ -43,9 +43,9 @@
                             <span>Update Vice Mayor</span>
                         </div>
                     </a>
-                    <a href="/superadmin/captain/edit" class="admin-sidebar__link">
+                    <a href="/superadmin/captain/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Update Captain</span>
+                            <span>Add Captain</span>
                         </div>
                     </a>
                     <a href="/superadmin/councilor/add" class="admin-sidebar__link">
@@ -119,31 +119,9 @@
                             <span>Add Galleries</span>
                         </div>
                     </a>
-                    <a href="/superadmin/galleries/list" class="admin-sidebar__link">
+                    <a href="/superadmin/galleries/" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Galleries</span>
-                        </div>
-                    </a>
-                </div>
-            </li>
-            <li class="admin-sidebar__item">
-                <a class="admin-sidebar__link">
-                    <div class="admin-sidebar__item-text">
-                        <span>About us</span>
-                    </div>
-                    <div class="admin-sidebar__item-icon">
-                        <i class="fa fa-chevron-right"></i>
-                    </div>
-                </a>
-                <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/about-us/add" class="admin-sidebar__link">
-                        <div class="admin-sidebar__item-text">
-                            <span>Add About us</span>
-                        </div>
-                    </a>
-                    <a href="/superadmin/about-us/list" class="admin-sidebar__link">
-                        <div class="admin-sidebar__item-text">
-                            <span>List About us</span>
                         </div>
                     </a>
                 </div>
