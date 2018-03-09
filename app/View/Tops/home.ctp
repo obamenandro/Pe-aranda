@@ -1,3 +1,4 @@
+<?= $this->Session->flash(); ?>
 <section class="showcase">
 	<div class="container">
 		<h1 class="showcase__highlight">Peñaranda Nueva Ecija</h1>
@@ -63,39 +64,49 @@
 
 <div class="feedback">
 	<div class="container">
-		<form class="feedback__form">
+			<?= $this->Form->create('Comment', [
+				'type' => 'POST',
+				'url'  => '/tops/comment/',
+				'class' => "feedback__form"
+			]); ?>
 			<div class="feedback__form-list">
 				<label class="feedback__label">Name:<span class="feedback__required">*<span></label>
-				<input type="text" class="feedback__textbox">
+				<?=
+                    $this->Form->input('name', [
+                        'type'     => 'text',
+                        'div'      => false,
+                        'label'    => false,
+                        'required' => false,
+                        'error'    => false,
+                        'class'    => 'feedback__textbox'
+                    ]);
+                ?>
 			</div>
 			<div class="feedback__form-list">
 				<label class="feedback__label">Message:</label>
-				<textarea cols="30" rows="10" class="feedback__textarea"></textarea>
+				<?=
+                    $this->Form->input('comment', [
+                        'type'     => 'textarea',
+                        'div'      => false,
+                        'label'    => false,
+                        'required' => false,
+                        'error'    => false,
+                        'class'    => 'feedback__textarea'
+                    ]);
+                ?>
 			</div>
-		</form>
+			<?= $this->Form->submit('Submit'); ?>
+			<?= $this->Form->end(); ?>
 
 		<div class="feedback__message">
 			<ul class="feedback__message-list">
+				<?php foreach($comments as $comment): ?>
 				<li class="feedback__message-item">
-					<span class="feedback__message-name">PANGALAN</span>
-					<span class="feedback__message-date">2018-02-02</span>
-					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
+					<span class="feedback__message-name"><?= $comment['Comment']['name'] ?></span>
+					<span class="feedback__message-date"><?= date('Y-m-d', strtotime($comment['Comment']['created'])) ?></span>
+					<p class="feedback__message-result"><?= h($comment['Comment']['comment']) ?></p>
 				</li>
-				<li class="feedback__message-item">
-					<span class="feedback__message-name">PANGALAN</span>
-					<span class="feedback__message-date">2018-02-02</span>
-					<p class="feedback__message-result">ang panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nito</p>
-				</li>
-				<li class="feedback__message-item">
-					<span class="feedback__message-name">PANGALAN</span>
-					<span class="feedback__message-date">2018-02-02</span>
-					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
-				</li>
-				<li class="feedback__message-item">
-					<span class="feedback__message-name">PANGALAN</span>
-					<span class="feedback__message-date">2018-02-02</span>
-					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
-				</li>
+				<?php endforeach; ?>
 			</ul>
 		</div>
 	</div>
