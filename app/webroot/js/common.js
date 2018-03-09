@@ -17,9 +17,16 @@ $('.gototop').click(function() {
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
-        reader.onload = function (e) {
-            $('.form-field__image-wrapper img').attr('src', e.target.result);
+        var getExtension = input.files[0]['name'];
+        var splitExtensionName = getExtension.split('.').pop();
+        if ( splitExtensionName == "jpg" || splitExtensionName == "png" ||  splitExtensionName == "jpeg" || splitExtensionName == "gif") {
+            reader.onload = function (e) {
+                $('.form-field__image-wrapper img').attr('src', e.target.result);
+            }
+        }
+        else {
+            $("#input-file").val('');
+            $('.form-error-image').css('display','block')
         }
 
         reader.readAsDataURL(input.files[0]);

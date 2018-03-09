@@ -47,9 +47,11 @@
                         'required' => false,
                         'div'      => false,
                         'label'    => false,
-                        'class'    => 'input__upload-img'
+                        'class'    => 'input__upload-img',
+                        'accept'   => 'image/x-png,image/gif,image/jpeg'
                     ]);
                 ?>
+                <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                 <div class="form-field__image-wrapper">
                     <img src="/images/placeholder/placeholder.png" class="form-field__image">
                 </div>

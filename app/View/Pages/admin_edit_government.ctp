@@ -37,13 +37,14 @@
             <label class="form-field__label">Image :</label>
             <div class="form-field__input-wrapper">
                 <input type="file" hidden id="input-file">
+                <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                 <a class="form-field__upload">Browse Image</a>
                 <span class="form-field__upload-text">Image name</span>
                 <div class="form-field__image-wrapper">
                     <img src="/images/placeholder/placeholder.png" class="form-field__image">
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="form-field__button">
             <input type="submit" value="Register" class="form-field__button-register">
         </div>

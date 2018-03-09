@@ -45,6 +45,11 @@ body {
   .main-content {
     padding-top: 71px; } }
 
+.form-error-image {
+  display: none;
+  color: #E8491D;
+  font-size: 14px; }
+
 /*components*/
 .header {
   background: #35424a;
@@ -697,14 +702,6 @@ body {
 .form-field__list.form-field__list--error .form-field__input,
 .form-field__list.form-field__list--error .form-field__textarea {
   border: 1px solid #E8491D; }
-
-.form-field.form-field--gallery {
-  padding: 40px 25px; }
-  .form-field.form-field--gallery .form-field__image {
-    height: 200px; }
-  .form-field.form-field--gallery .form-field__label {
-    width: 70%;
-    padding-bottom: 7px; }
 
 .form-field.form-field--services .form-field__label {
   width: 20%; }

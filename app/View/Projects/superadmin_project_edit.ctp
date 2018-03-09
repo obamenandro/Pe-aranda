@@ -48,6 +48,7 @@
                         'class'    => 'input__upload-img'
                     ]);
                 ?>
+                <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                 <div class="form-field__image-wrapper">
                     <?php if(!empty($project['Project']['image'])): ?>
                         <img src="<?= $project['Project']['image'] ?>" class="form-field__image">
@@ -56,9 +57,9 @@
                     <?php endif; ?>
                 </div>
             </div>
-        </div>  
+        </div>
         <div class="form-field__button">
             <input type="submit" value="Update" class="form-field__button-register">
-        </div>  
+        </div>
     <?= $this->Form->end(); ?>
 </div>

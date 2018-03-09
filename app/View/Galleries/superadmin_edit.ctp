@@ -6,7 +6,7 @@
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]) ?>
-        <div class="form-field__gallery-wrapper">   
+        <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
                 <div class="form-field__list form-field__list--error">
                     <label class="form-field__label">Title :</label>
@@ -52,6 +52,7 @@
                                 'class'    => 'input__upload-img'
                             ]);
                         ?>
+                        <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                         <div class="form-field__image-wrapper">
                             <?php if(!empty($gallery['Gallery']['image'])): ?>
                                 <img src="<?= $gallery['Gallery']['image'] ?>" class="form-field__image">
@@ -60,7 +61,7 @@
                             <?php endif; ?>
                         </div>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
 

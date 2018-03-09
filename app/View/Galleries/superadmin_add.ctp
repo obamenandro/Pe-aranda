@@ -6,7 +6,7 @@
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]);?>
-        <div class="form-field__gallery-wrapper">   
+        <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
                 <div class="form-field__list form-field__list--error">
                     <label class="form-field__label">Title :</label>
@@ -52,21 +52,15 @@
                                 'class'    => 'input__upload-img'
                             ]);
                         ?>
+                        <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                         <div class="form-field__image-wrapper">
                             <img src="/images/placeholder/placeholder.png" class="form-field__image">
                         </div>
                         <span class="form-field__error"><?= $this->Form->error('image'); ?></span>
                     </div>
-                </div>  
+                </div>
             </div>
         </div>
-
-        <!-- <div class="form-field__add-more">
-            <div class="form-field__add-image">
-                <i class="fa fa-plus-circle form-field__add-icon"></i>
-                <span class="form-field__add-field">Click Here to Add more Field</span>
-            </div>
-        </div> -->
 
         <div class="form-field__button">
             <?=
