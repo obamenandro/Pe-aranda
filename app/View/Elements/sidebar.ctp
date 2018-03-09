@@ -136,12 +136,12 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/alcaldez/add" class="admin-sidebar__link">
+                    <a href="/superadmin/alcaldezs/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Alcaldez</span>
                         </div>
                     </a>
-                    <a href="/superadmin/alcaldez/list" class="admin-sidebar__link">
+                    <a href="/superadmin/alcaldezs/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Alcaldez</span>
                         </div>

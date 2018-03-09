@@ -106,17 +106,21 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'admin_edit_aboutus'
 	));
-	Router::connect('/admin/alcaldez/add', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_add_alcaldez'
+	Router::connect('/superadmin/alcaldezs/add', array(
+		'controller' => 'alcaldezs', 
+		'action'     => 'superadmin_add'
 	));
-	Router::connect('/admin/alcaldez/list', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_list_alcaldez'
+	Router::connect('/superadmin/alcaldezs/list', array(
+		'controller' => 'alcaldezs', 
+		'action'     => 'superadmin_index'
 	));
-	Router::connect('/admin/alcaldez/edit', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_edit_alcaldez'
+	Router::connect('/superadmin/alcaldezs/edit/*', array(
+		'controller' => 'alcaldezs', 
+		'action'     => 'superadmin_edit'
+	));
+	Router::connect('/superadmin/alcaldezs/delete/*', array(
+		'controller' => 'alcaldezs', 
+		'action'     => 'superadmin_delete'
 	));
 	Router::connect('/superadmin/mayor/edit/*', array(
 		'controller' => 'governments', 
