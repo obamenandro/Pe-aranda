@@ -1157,7 +1157,7 @@ body {
   .feedback__message-date {
     font-size: 12px;
     position: absolute;
-    top: 20px;
+    top: 12px;
     right: 10px;
     font-weight: 600; }
   .feedback__message-result {
@@ -1176,5 +1176,9 @@ body {
     border: 1px solid #E8491D;
     color: #ffffff; }
   .feedback__form-button {
-    max-width: 150px;
+    max-width: 190px;
     margin: 10px auto; }
+    @media screen and (max-width: 767px) {
+      .feedback__form-button {
+        max-width: 100%;
+        text-align: center; } }
