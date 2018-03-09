@@ -17,14 +17,24 @@
 		</div>
 		<nav class="header__navigation">
 			<ul>
-				<li class="header__nav-list header__nav-list--current">
+				<li class="header__nav-list <?php if ($this->request->params['controller'] == "tops" && $this->request->params['action'] == "home") { echo 'header__nav-list--current'; }?>">
 					<a class="header__link" href="/">Home</a>
 				</li>
-				<li class="header__nav-list"><a class="header__link" href="/government">Government</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/tourism">Tourism</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/services">Services</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/gallery">Gallery</a></li>
-				<li class="header__nav-list"><a class="header__link" href="/about-us">About us</a></li>
+				<li class="header__nav-list <?php if ($this->request->params['controller'] == "governments" && $this->request->params['action'] == "index") { echo 'header__nav-list--current'; }?>">
+					<a class="header__link" href="/government">Government</a>
+				</li>
+				<li class="header__nav-list <?php if ($this->request->params['controller'] == "tourisms" && $this->request->params['action'] == "index") { echo 'header__nav-list--current'; }?>">
+					<a class="header__link" href="/tourism">Tourism</a>
+				</li>
+				<li class="header__nav-list <?php if ($this->request->params['controller'] == "services" && $this->request->params['action'] == "index") { echo 'header__nav-list--current'; }?>">
+					<a class="header__link" href="/services">Services</a>
+				</li>
+				<li class="header__nav-list <?php if ($this->request->params['controller'] == "galleries" && $this->request->params['action'] == "index") { echo 'header__nav-list--current'; }?>">
+					<a class="header__link" href="/gallery">Gallery</a>
+				</li>
+				<li class="header__nav-list">
+					<a class="header__link" href="/about-us">About us</a>
+				</li>
 			</ul>
 		</nav>
 	</div>
