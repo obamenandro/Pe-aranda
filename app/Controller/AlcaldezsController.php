@@ -80,5 +80,9 @@ class AlcaldezsController extends AppController {
         } else {
             return $this->redirect('/superadmin/alcaldezs/list');
         }
-	}
+    }
+    
+    public function index() {
+        
+    }
 }
