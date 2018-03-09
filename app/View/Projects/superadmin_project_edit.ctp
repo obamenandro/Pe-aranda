@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="form-field__button">
-            <input type="submit" value="Update" class="form-field__button-register">
+            <?= $this->Form->submit("Update", ['class' => "form-field__button-register"]); ?>
         </div>
     <?= $this->Form->end(); ?>
 </div>

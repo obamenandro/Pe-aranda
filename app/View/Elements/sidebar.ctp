@@ -70,12 +70,12 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/tourisms/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Tourism</span>
                         </div>
                     </a>
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/tourisms/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Tourism</span>
                         </div>

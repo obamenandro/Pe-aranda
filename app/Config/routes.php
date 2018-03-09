@@ -151,13 +151,26 @@
 		'controller' => 'governments', 
 		'action'     => 'superadmin_delete'
 	));
+	Router::connect('/superadmin/tourisms/add', array(
+		'controller' => 'tourisms', 
+		'action'     => 'superadmin_add'
+	));
+	Router::connect('/superadmin/tourisms/list', array(
+		'controller' => 'tourisms', 
+		'action'     => 'superadmin_index'
+	));
+	Router::connect('/superadmin/tourisms/edit/*', array(
+		'controller' => 'tourisms',
+		'action'     => 'superadmin_edit'
+	));
+	Router::connect('/superadmin/tourisms/delete/*', array(
+		'controller' => 'tourisms',
+		'action'     => 'superadmin_delete'
+	));
 	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
 	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
 	Router::connect('/admin/government/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_government'));
 	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));
-	Router::connect('/admin/tourism/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_tourism'));
-	Router::connect('/admin/tourism/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_tourism'));
-	Router::connect('/admin/tourism/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_tourism'));
 	Router::connect('/admin/services/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_services'));
 	Router::connect('/admin/services/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_services'));
 	Router::connect('/admin/services/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_services'));

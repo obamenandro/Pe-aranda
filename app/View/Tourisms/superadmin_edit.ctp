@@ -1,11 +1,10 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->flash() ?>
-    <?= $this->Form->create('Gallery', [
+    <?= $this->Form->create('Tourism', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
-        'class'   => "form-field"
+        'class'   => "form-field form-field--gallery"
     ]) ?>
         <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
@@ -55,8 +54,8 @@
                         ?>
                         <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                         <div class="form-field__image-wrapper">
-                            <?php if(!empty($gallery['Gallery']['image'])): ?>
-                                <img src="<?= $gallery['Gallery']['image'] ?>" class="form-field__image">
+                            <?php if(!empty($tourism['Tourism']['image'])): ?>
+                                <img src="<?= $tourism['Tourism']['image'] ?>" class="form-field__image">
                             <?php else: ?>
                                 <img src="/images/placeholder/placeholder.png" class="form-field__image">
                             <?php endif; ?>
@@ -69,5 +68,5 @@
         <div class="form-field__button">
             <input type="submit" value="Update" class="form-field__button-register">
         </div>
-    <?= $this->Form->end(); ?>
+    </form>
 </div>

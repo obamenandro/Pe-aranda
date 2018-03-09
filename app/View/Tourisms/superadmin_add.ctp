@@ -1,15 +1,14 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->flash() ?>
-    <?= $this->Form->create('Gallery', [
+     <?= $this->Form->create('Tourism', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
-        'class'   => "form-field"
-    ]) ?>
+        'class'   => "form-field form-field--gallery"
+    ]);?>
         <div class="form-field__gallery-wrapper">
             <div class="form-field__gallery-box">
-                <div class="form-field__list form-field__list--error">
+                <div class="form-field__list">
                     <label class="form-field__label">Title :</label>
                     <div class="form-field__input-wrapper">
                         <?=
@@ -55,19 +54,16 @@
                         ?>
                         <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                         <div class="form-field__image-wrapper">
-                            <?php if(!empty($gallery['Gallery']['image'])): ?>
-                                <img src="<?= $gallery['Gallery']['image'] ?>" class="form-field__image">
-                            <?php else: ?>
-                                <img src="/images/placeholder/placeholder.png" class="form-field__image">
-                            <?php endif; ?>
+                            <img src="/images/placeholder/placeholder.png" class="form-field__image">
                         </div>
+                        <span class="form-field__error"><?= $this->Form->error('image'); ?></span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="form-field__button">
-            <input type="submit" value="Update" class="form-field__button-register">
+             <?= $this->Form->submit('Register', ['class' => "form-field__button-register"]); ?>
         </div>
     <?= $this->Form->end(); ?>
 </div>
