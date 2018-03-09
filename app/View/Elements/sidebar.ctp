@@ -35,10 +35,25 @@
                 <div class="admin-sidebar__submenu">
                     <a href="/superadmin/mayor/edit/" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Government</span>
+                            <span>Update Mayor</span>
                         </div>
                     </a>
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/vicemayor/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Update Vice Mayor</span>
+                        </div>
+                    </a>
+                    <a href="/superadmin/captain/edit" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Update Captain</span>
+                        </div>
+                    </a>
+                    <a href="/superadmin/councilor/add" class="admin-sidebar__link">
+                        <div class="admin-sidebar__item-text">
+                            <span>Add Councilor</span>
+                        </div>
+                    </a>
+                    <a href="/superadmin/government/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Government</span>
                         </div>
