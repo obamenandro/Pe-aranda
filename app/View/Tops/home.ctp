@@ -55,6 +55,52 @@
 	</div>
 </section>
 
+<section class="newsletter">
+	<div class="container">
+		<h2 class="newsletter__center">Feedback and Suggestions</h2>
+	</div>
+</section>
+
+<div class="feedback">
+	<div class="container">
+		<form class="feedback__form">
+			<div class="feedback__form-list">
+				<label class="feedback__label">Name:<span class="feedback__required">*<span></label>
+				<input type="text" class="feedback__textbox">
+			</div>
+			<div class="feedback__form-list">
+				<label class="feedback__label">Message:</label>
+				<textarea cols="30" rows="10" class="feedback__textarea"></textarea>
+			</div>
+		</form>
+
+		<div class="feedback__message">
+			<ul class="feedback__message-list">
+				<li class="feedback__message-item">
+					<span class="feedback__message-name">PANGALAN</span>
+					<span class="feedback__message-date">2018-02-02</span>
+					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
+				</li>
+				<li class="feedback__message-item">
+					<span class="feedback__message-name">PANGALAN</span>
+					<span class="feedback__message-date">2018-02-02</span>
+					<p class="feedback__message-result">ang panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nitong panget ng nakaisip nito</p>
+				</li>
+				<li class="feedback__message-item">
+					<span class="feedback__message-name">PANGALAN</span>
+					<span class="feedback__message-date">2018-02-02</span>
+					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
+				</li>
+				<li class="feedback__message-item">
+					<span class="feedback__message-name">PANGALAN</span>
+					<span class="feedback__message-date">2018-02-02</span>
+					<p class="feedback__message-result">ang panget ng nakaisip nito</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
 <?= $this->element('gototop'); ?>
 
 <script>

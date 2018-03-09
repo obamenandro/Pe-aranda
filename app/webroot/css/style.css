@@ -1082,3 +1082,84 @@ body {
     .modal-confirmation__delete-btn:hover {
       opacity: .7;
       transition: .7s; }
+
+.feedback {
+  padding: 50px 0;
+  font-size: 0; }
+  .feedback__label {
+    font-size: 16px;
+    display: block;
+    padding-bottom: 5px; }
+  .feedback__textbox {
+    font-size: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    width: 100%;
+    box-sizing: border-box; }
+  .feedback__textarea {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box; }
+  .feedback__form-list {
+    display: block;
+    padding-bottom: 10px;
+    width: 80%; }
+    @media screen and (max-width: 767px) {
+      .feedback__form-list {
+        width: 100%; } }
+  .feedback__required {
+    font-size: 18px;
+    color: red;
+    margin-left: 4px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 0; }
+  .feedback__form {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%;
+    margin-right: 5%; }
+    @media screen and (max-width: 767px) {
+      .feedback__form {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px; } }
+  .feedback__message {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top; }
+    @media screen and (max-width: 767px) {
+      .feedback__message {
+        width: 100%; } }
+  .feedback__message-list {
+    border: 1px solid #CCCCCC;
+    height: 47vh;
+    border-radius: 5px;
+    background: #ffffff;
+    padding: 5px 10px 10px;
+    overflow-y: auto;
+    box-sizing: border-box; }
+  .feedback__message-item {
+    display: block;
+    padding: 12px 15px;
+    border-bottom: 1px solid #CCC;
+    position: relative; }
+  .feedback__message-name {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px; }
+  .feedback__message-date {
+    font-size: 12px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-weight: 600; }
+  .feedback__message-result {
+    display: block;
+    font-size: 14px; }
