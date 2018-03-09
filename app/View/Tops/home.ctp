@@ -94,8 +94,9 @@
                         'class'    => 'feedback__textarea'
                     ]);
                 ?>
+				<span class="feedback__form-error"><?php echo __("you've reached 200 characters")?></span>
 			</div>
-			<?= $this->Form->submit('Submit'); ?>
+			<?= $this->Form->submit('Submit' , ['class' => 'feedback__submit']); ?>
 			<?= $this->Form->end(); ?>
 
 		<div class="feedback__message">
@@ -120,4 +121,15 @@
 		sr.reveal('.boxes', { duration: 2000 }, 50);
 		sr.reveal('.boxes--expectation', { duration: 2000 }, 50);
 	}
+
+	$('.feedback__textarea').keyup(function(e){
+		var countLength = $(this).val().length;
+		if ( countLength >= 200 ) {
+			$('.feedback__form-error').show();
+			$(this).val($(this).val().substring(0, 200));
+		}
+		else {
+			$('.feedback__form-error').hide();
+		}
+	})
 </script>

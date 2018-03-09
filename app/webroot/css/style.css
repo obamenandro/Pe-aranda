@@ -1157,9 +1157,28 @@ body {
   .feedback__message-date {
     font-size: 12px;
     position: absolute;
-    top: 20px;
+    top: 12px;
     right: 10px;
     font-weight: 600; }
   .feedback__message-result {
     display: block;
+    font-size: 14px;
+    word-break: break-all; }
+  .feedback__form-error {
+    display: none;
+    color: red;
     font-size: 14px; }
+  .feedback__submit {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #E8491D;
+    border-radius: 5px;
+    border: 1px solid #E8491D;
+    color: #ffffff; }
+  .feedback__form-button {
+    max-width: 190px;
+    margin: 10px auto; }
+    @media screen and (max-width: 767px) {
+      .feedback__form-button {
+        max-width: 100%;
+        text-align: center; } }
