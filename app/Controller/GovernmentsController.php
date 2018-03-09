@@ -389,4 +389,8 @@ class GovernmentsController extends AppController {
             return $this->redirect('/superadmin/government/lists/');
         }
     }
+
+    public function index() {
+		
+	}
 }

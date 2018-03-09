@@ -79,4 +79,7 @@ class ServicesController extends AppController {
         }
     }
 
+    public function index() {
+
+    }
 }

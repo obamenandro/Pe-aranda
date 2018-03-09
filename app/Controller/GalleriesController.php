@@ -139,4 +139,8 @@ class GalleriesController extends AppController {
             return $this->redirect('/superadmin/galleries/list');
         }
     }
+
+    public function index() {
+        
+    }
 }

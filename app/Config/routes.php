@@ -55,20 +55,20 @@
 		'action'     => 'superadmin_delete'
 	));
 	Router::connect('/gallery', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'gallery'
+		'controller' => 'galleries', 
+		'action'     => 'index'
 	));
 	Router::connect('/services', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'services'
+		'controller' => 'services', 
+		'action'     => 'index'
 	));
 	Router::connect('/government', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'government'
+		'controller' => 'governments', 
+		'action'     => 'index'
 	));
 	Router::connect('/tourism', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'tourism'
+		'controller' => 'tourisms', 
+		'action'     => 'index'
 	));
 	Router::connect('/superadmin/login', array(
 		'controller' => 'users', 

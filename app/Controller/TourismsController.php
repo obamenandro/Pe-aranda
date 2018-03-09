@@ -131,5 +131,9 @@ class TourismsController extends AppController {
         } else {
             return $this->redirect('/superadmin/tourisms/list');
         }
-	}
+    }
+    
+    public function index() {
+
+    }
 }
