@@ -32,7 +32,7 @@
 				<li class="header__nav-list <?php if ($this->request->params['controller'] == "galleries" && $this->request->params['action'] == "index") { echo 'header__nav-list--current'; }?>">
 					<a class="header__link" href="/gallery">Gallery</a>
 				</li>
-				<li class="header__nav-list">
+				<li class="header__nav-list  <?php if ($this->request->params['pass'][0] == "about-us") { echo 'header__nav-list--current'; }?>">
 					<a class="header__link" href="/about-us">About us</a>
 				</li>
 			</ul>

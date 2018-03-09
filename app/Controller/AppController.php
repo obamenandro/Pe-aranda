@@ -57,6 +57,7 @@ class AppController extends Controller {
         }
 	   	$this->Auth->allow(
 			'home',
+			'display',
 			'index',
 			'superadmin_login',
 			'superadmin_logout'
