@@ -33,7 +33,7 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/mayor/edit/" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Government</span>
                         </div>

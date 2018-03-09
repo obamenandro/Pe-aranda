@@ -24,7 +24,7 @@
                             <a href="/superadmin/projects/edit/<?= $project['Project']['id'] ?>" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
-                            <a href="/superadmin/projects/delete/<?= $project['Project']['id'] ?>" class="admin-table__link admin-table__link--delete">Delete</a>
+                            <a href="javascript:void(0);" id="<?= $project['Project']['id'] ?>" class="admin-table__link admin-table__link--delete delete">Delete</a>
                         </div>
                     </td>
                 </tr>
@@ -33,7 +33,7 @@
         </table>
         <div class="pagination">
             <ul>
-                <?php 
+                <?php
                     $paginatorParams = $this->Paginator->params();
 
                     if (count($project_lists) != 0 && $paginatorParams['count'] > $paginatorParams['limit']) {
@@ -41,7 +41,7 @@
                         echo $this->Paginator->prev('< previous', array(), null, array('class' => 'prev disabled'));
                         // the 'number' page buttons
                         echo $this->Paginator->numbers([
-                            'modulus'      => 5, 
+                            'modulus'      => 5,
                             'separator'    => '',
                             'tag'          => 'li',
                             'class'        => 'pagination__list',
@@ -53,10 +53,10 @@
                 ?>
             </ul>
         </div>
-    </div> 
+    </div>
 </div>
 
-<div class="modal-confirmation" style="display: block">
+<div class="modal-confirmation">
     <div class="modal-confirmation__content">
         <div class="modal-confirmation__close">
             <button class="modal-confirmation__close-btn">x</button>
@@ -68,7 +68,19 @@
             <span>Are you sure you want to delete?</span>
         </div>
         <div class="modal-confirmation__button">
-            <button class="modal-confirmation__delete-btn">Delete</button>
+            <button class="modal-confirmation__delete-btn submit">Delete</button>
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var id = "";
+        $('.delete').on('click', function(){
+            id = $(this).attr('id');
+            $('.modal-confirmation').show();
+        });
+        $('.submit').on('click', function() {
+            window.location.href = "/superadmin/projects/delete/"+id;
+        });
+    })
+</script>
