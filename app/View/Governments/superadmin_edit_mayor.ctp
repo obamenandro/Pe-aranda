@@ -1,12 +1,12 @@
 <?php  $this->layout = 'admin'; ?>
-
 <div class="admin-form">
+    <?= $this->Session->flash(); ?>
     <?= $this->Form->create('Government', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]) ?>
-        <div class="form-field__list form-field__list--error">
+        <div class="form-field__list">
             <label class="form-field__label">Name :</label>
             <div class="form-field__input-wrapper">
                 <?=
@@ -25,7 +25,7 @@
         <div class="form-field__list form-field__list--textarea">
             <label class="form-field__label">Birthday :</label>
             <div class="form-field__input-wrapper">
-                <input name="data[Government][birthday]" type="date" class="form-field__input">
+                <input name="data[Government][birthday]" type="date" class="form-field__input" value="<?= isset($mayor['Government']['birthday']) ? $mayor['Government']['birthday'] : "" ?>">
                 <span class="form-field__error"><?= $this->Form->error('birthday'); ?></span>
             </div>
         </div>

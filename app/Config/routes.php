@@ -118,19 +118,38 @@
 		'controller' => 'pages', 
 		'action'     => 'display', 'admin_edit_alcaldez'
 	));
-	Router::connect('/superadmin/mayor/edit', array(
+	Router::connect('/superadmin/mayor/edit/*', array(
 		'controller' => 'governments', 
 		'action'     => 'superadmin_edit_mayor'
 	));
 		
-	Router::connect('/superadmin/vicemayor/edit', array(
+	Router::connect('/superadmin/vicemayor/edit/*', array(
 		'controller' => 'governments', 
 		'action'     => 'superadmin_edit_vicemayor'
 	));
+	Router::connect('/superadmin/captain/edit/*', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_edit_captain'
+	));
+	Router::connect('/superadmin/captain/add', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_add_captain'
+	));
+	Router::connect('/superadmin/government/lists', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_index'
+	));
+	Router::connect('/superadmin/councilor/add', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_add_councilor'
+	));
+	Router::connect('/superadmin/councilor/edit/*', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_edit_councilor'
+	));
+
 	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
 	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
-	Router::connect('/admin/captain/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_captain'));
-	Router::connect('/admin/councilor/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_councilor'));
 	Router::connect('/admin/government/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_government'));
 	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));
 	Router::connect('/admin/tourism/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_tourism'));

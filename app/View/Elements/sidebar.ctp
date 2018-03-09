@@ -53,7 +53,7 @@
                             <span>Add Councilor</span>
                         </div>
                     </a>
-                    <a href="/superadmin/government/list" class="admin-sidebar__link">
+                    <a href="/superadmin/government/lists" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Government</span>
                         </div>

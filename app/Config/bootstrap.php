@@ -111,3 +111,9 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+Configure::write('position', [
+	'Mayor'            => 'mayor',
+	'Vice Mayor'       => 'vicemayor',
+	'Councilor'        => 'councilor',
+	'Barangay Captain' => 'captain'
+]);

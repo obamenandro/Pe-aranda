@@ -26,7 +26,7 @@
         <div class="form-field__list form-field__list--textarea">
             <label class="form-field__label">Birthday :</label>
             <div class="form-field__input-wrapper">
-                <input name="data[Government][birthday]" type="date" class="form-field__input" value="<?= isset($vice_mayor['Government']['birthday']) ? $vice_mayor['Government']['birthday'] : "" ?>">
+                <input name="data[Government][birthday]" type="date" class="form-field__input" value="<?= isset($captain['Government']['birthday']) ? $captain['Government']['birthday'] : "" ?>">
                 <span class="form-field__error"><?= $this->Form->error('birthday'); ?></span>
             </div>
         </div>
@@ -56,7 +56,7 @@
                         'required' => false,
                         'error'    => false,
                         'class'    => 'form-field__input',
-                        'value'    => 'Vice Mayor',
+                        'value'    => 'Barangay Captain',
                         'disabled' => true
                     ]);
                 ?>
@@ -77,8 +77,8 @@
                 ?>
                 <span class="form-error-image"><?php echo __('please upload jpg, jpeg, gif, png only'); ?></span>
                 <div class="form-field__image-wrapper">
-                    <?php if(!empty($vice_mayor['Government']['image'])): ?>
-                        <img src="<?= $vice_mayor['Government']['image'] ?>" class="form-field__image">
+                    <?php if(!empty($captain['Government']['image'])): ?>
+                        <img src="<?= $captain['Government']['image'] ?>" class="form-field__image">
                     <?php else: ?>
                         <img src="/images/placeholder/placeholder.png" class="form-field__image">
                     <?php endif; ?>

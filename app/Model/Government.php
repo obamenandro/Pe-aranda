@@ -11,46 +11,30 @@ class Government extends AppModel {
  *
  * @var array
  */
-	public $validate = array(
-		'name' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'position' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'birthday' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-		'message' => array(
-			'notBlank' => array(
-				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
-	);
+	public $validate = [
+		'name' => [
+			'notBlank' => [
+				'rule'    => ['notBlank'],
+				'message' => 'Government name is required.'
+			],
+		],
+		'position' => [
+			'notBlank' => [
+				'rule' => ['notBlank'],
+				'message' => 'Government position is required.'
+			],
+		],
+		'birthday' => [
+			'notBlank' => [
+				'rule' => ['notBlank'],
+				'message' => 'Government birthday is required.',
+			],
+		],
+		'message' => [
+			'notBlank' => [
+				'rule' => ['notBlank'],
+				'message' => 'Government message is required.'
+			],
+		],
+	];
 }
