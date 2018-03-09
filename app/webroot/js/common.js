@@ -46,7 +46,7 @@ $('.modal-confirmation__close-btn').click(function() {
     $('.modal-confirmation').hide();
 })
 
-// close flash message
-$('.flash-message__close-btn').click(function() {
-    $('.flash-message').hide()
-})
+// Flash Message
+setTimeout(function() {
+    $('.flash-message').fadeOut();
+}, 3000)
