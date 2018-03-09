@@ -308,8 +308,9 @@ body {
 
 .boxes__list-image {
   width: 100%;
-  height: auto;
-  box-shadow: 0px 0px 1px; }
+  height: 100%;
+  box-shadow: 0px 0px 1px;
+  object-fit: cover; }
 
 .boxes__list-h3 {
   font-size: 18px;
@@ -354,6 +355,14 @@ body {
 .boxes__list-paragraph {
   display: block;
   padding-bottom: 5px; }
+
+.boxes__image-container {
+  display: block;
+  height: 30vh;
+  overflow: hidden; }
+  @media screen and (max-width: 767px) {
+    .boxes__image-container {
+      height: 25vh; } }
 
 .form {
   display: inline-block;

@@ -23,8 +23,9 @@
 
     &__list-image {
         width: 100%;
-        height: auto;
+        height: 100%;
         box-shadow: 0px 0px 1px;
+        object-fit: cover;
     }
 
     &__list-h3 {
@@ -79,5 +80,15 @@
     &__list-paragraph {
         display: block;
         padding-bottom: 5px;
+    }
+
+    &__image-container {
+        display: block;
+        height: 30vh;
+        overflow: hidden;
+
+        @media screen and (max-width: 767px ) {
+            height: 25vh;
+        }
     }
 }
