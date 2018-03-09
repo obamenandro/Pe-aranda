@@ -2,6 +2,7 @@
 
 <div class="admin-form">
     <div class="admin-table">
+    <?= $this->Session->flash(); ?>
         <table class="admin-table__wrapper admin-table__wrapper--services">
             <thead>
                 <tr class="admin-table__head">
