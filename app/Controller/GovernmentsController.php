@@ -391,6 +391,9 @@ class GovernmentsController extends AppController {
     }
 
     public function index() {
-		
+		$this->Government = ClassRegistry::init('Government');
+
+        $governments = $this->Government->find('all');
+        $this->set(compact('governments'));
 	}
 }

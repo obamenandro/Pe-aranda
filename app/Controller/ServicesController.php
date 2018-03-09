@@ -80,6 +80,7 @@ class ServicesController extends AppController {
     }
 
     public function index() {
-
+        $services = $this->Service->find('all');
+        $this->set(compact('services'));
     }
 }
