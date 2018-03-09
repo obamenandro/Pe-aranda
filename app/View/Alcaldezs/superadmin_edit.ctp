@@ -1,11 +1,11 @@
 <div class="admin-form">
-    <?= $this->Session->Flash() ?>
     <?= $this->Form->create('Alcaldez', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,
         'class'   => "form-field"
     ]);?>
-        <div class="form-field__list">
+        <?= $this->Session->Flash() ?>
+        <div class="form-field__list <?php echo $this->Form->error('name') ? 'form-field__list--error' : '' ;?>">
             <label class="form-field__label">Name :</label>
             <div class="form-field__input-wrapper">
                 <?=
@@ -21,7 +21,7 @@
                 <span class="form-field__error"><?= $this->Form->error('name'); ?></span>
             </div>
         </div>
-        <div class="form-field__list form-field__list--textarea">
+        <div class="form-field__list form-field__list--textarea <?php echo $this->Form->error('year_services') ? 'form-field__list--error' : '' ;?>">
             <label class="form-field__label">Years In Service :</label>
             <div class="form-field__input-wrapper">
                 <?=
@@ -37,7 +37,7 @@
                 <span class="form-field__error"><?= $this->Form->error('year_services'); ?></span>
             </div>
         </div>
-        <div class="form-field__list form-field__list--textarea">
+        <div class="form-field__list form-field__list--textarea <?php echo $this->Form->error('position') ? 'form-field__list--error' : '' ;?>">
             <label class="form-field__label">Position :</label>
             <div class="form-field__input-wrapper">
                  <?=

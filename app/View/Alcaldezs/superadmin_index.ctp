@@ -1,8 +1,8 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
-    <?= $this->Session->Flash() ?>
     <div class="admin-table">
+        <?= $this->Session->Flash() ?>
         <table class="admin-table__wrapper">
             <thead>
                 <tr class="admin-table__head">
