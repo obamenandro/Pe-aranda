@@ -14,41 +14,14 @@
             <li class="services__item-title">Processing Time</li>
             <li class="services__item-title">Office Responsible</li>
         </ul>
+        <?php foreach($services as $service): ?>
         <ul class="services__list">
-            <li class="services__item-result">Legalization</li>
-            <li class="services__item-result">150.00</li>
-            <li class="services__item-result">Application Form</li>
-            <li class="services__item-result">31 minutes</li>
-            <li class="services__item-result">Office of the Mayor</li>
+            <li class="services__item-result"><?= $service['Service']['name'] ?></li>
+            <li class="services__item-result"><?= $service['Service']['fee'] ?></li>
+            <li class="services__item-result"><?= $service['Service']['form'] ?></li>
+            <li class="services__item-result"><?= $service['Service']['process_time'] ?></li>
+            <li class="services__item-result"><?= $service['Service']['office_responsible'] ?></li>
         </ul>
-        <ul class="services__list">
-            <li class="services__item-result">Legalization</li>
-            <li class="services__item-result">150.00</li>
-            <li class="services__item-result">Application Form</li>
-            <li class="services__item-result">31 minutes</li>
-            <li class="services__item-result">Office of the Mayor</li>
-        </ul>
-        <ul class="services__list">
-            <li class="services__item-result">Legalization</li>
-            <li class="services__item-result">150.00</li>
-            <li class="services__item-result">Application Form</li>
-            <li class="services__item-result">31 minutes</li>
-            <li class="services__item-result">Office of the Mayor</li>
-        </ul>
-        <ul class="services__list">
-            <li class="services__item-result">Legalization</li>
-            <li class="services__item-result">150.00</li>
-            <li class="services__item-result">Application Form</li>
-            <li class="services__item-result">31 minutes</li>
-            <li class="services__item-result">Office of the Mayor</li>
-        </ul>
-        <ul class="services__list">
-            <li class="services__item-result">Legalization</li>
-            <li class="services__item-result">150.00</li>
-            <li class="services__item-result">Application Form</li>
-            <li class="services__item-result">31 minutes</li>
-            <li class="services__item-result">Office of the Mayor</li>
-        </ul>
-
+        <?php endforeach; ?>
     </div>
 </section>

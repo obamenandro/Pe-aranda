@@ -35,8 +35,8 @@
 		'action'     => 'display', 'about-us'
 	));
 	Router::connect('/alcaldez', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'alcaldez'
+		'controller' => 'alcaldezs', 
+		'action'     => 'index'
 	));
 	Router::connect('/superadmin/galleries/add', array(
 		'controller' => 'galleries', 

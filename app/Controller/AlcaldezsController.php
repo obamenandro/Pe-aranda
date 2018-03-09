@@ -81,4 +81,10 @@ class AlcaldezsController extends AppController {
             return $this->redirect('/superadmin/alcaldezs/list');
         }
 	}
+
+    public function index() {
+        $alcaldezs = $this->Alcaldez->find('all');
+
+        $this->set(compact('alcaldezs'));
+    }
 }

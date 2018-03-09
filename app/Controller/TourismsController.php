@@ -134,6 +134,10 @@ class TourismsController extends AppController {
     }
     
     public function index() {
-
+        $this->Paginator->settings = [
+            'limit' => 5
+        ];
+        $tourisms = $this->Paginator->paginate('Tourism');
+        $this->set(compact('tourisms'));
     }
 }

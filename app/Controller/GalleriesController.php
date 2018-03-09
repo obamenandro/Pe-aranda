@@ -141,6 +141,10 @@ class GalleriesController extends AppController {
     }
 
     public function index() {
-        
+        $this->Paginator->settings = [
+            'limit' => 10
+        ];
+        $galleries = $this->Paginator->paginate('Gallery');
+        $this->set(compact('galleries'));
     }
 }
