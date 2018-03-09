@@ -92,12 +92,12 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/services/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>Add Services</span>
                         </div>
                     </a>
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/services/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
                             <span>List Services</span>
                         </div>
@@ -114,14 +114,14 @@
                     </div>
                 </a>
                 <div class="admin-sidebar__submenu">
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/galleries/add" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>Add Services</span>
+                            <span>Add Galleries</span>
                         </div>
                     </a>
-                    <a href="/superadmin/projects" class="admin-sidebar__link">
+                    <a href="/superadmin/galleries/list" class="admin-sidebar__link">
                         <div class="admin-sidebar__item-text">
-                            <span>List Services</span>
+                            <span>List Galleries</span>
                         </div>
                     </a>
                 </div>

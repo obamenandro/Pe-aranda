@@ -61,7 +61,7 @@ class GalleriesController extends AppController {
                             }
                         }
                         $this->Session->setFlash(__('Gallery has been successfully added.'), 'success');
-                        return $this->redirect('/superadmin/galleries/');
+                        return $this->redirect('/superadmin/galleries/list');
                     }
                 } else {
                     $this->Session->setFlash(__('Gallery has been failed to save'), 'error');
@@ -134,9 +134,9 @@ class GalleriesController extends AppController {
         if ($this->Gallery->exists()) {
             $this->Gallery->delete($id);
             $this->Session->setFlash(__('Gallery has been successfully deleted.'), 'success');
-            return $this->redirect('/superadmin/galleries/');
+            return $this->redirect('/superadmin/galleries/list');
         } else {
-            return $this->redirect('/superadmin/galleries/');
+            return $this->redirect('/superadmin/galleries/list');
         }
     }
 }

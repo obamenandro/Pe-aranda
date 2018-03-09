@@ -42,7 +42,7 @@
 		'controller' => 'galleries', 
 		'action'     => 'superadmin_add'
 	));
-	Router::connect('/superadmin/galleries/', array(
+	Router::connect('/superadmin/galleries/list', array(
 		'controller' => 'galleries', 
 		'action'     => 'superadmin_index'
 	));
@@ -167,13 +167,23 @@
 		'controller' => 'tourisms',
 		'action'     => 'superadmin_delete'
 	));
-	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
-	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
-	Router::connect('/admin/government/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_government'));
-	Router::connect('/admin/councilor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_government'));
-	Router::connect('/admin/services/add', array('controller' => 'pages', 'action' => 'display', 'admin_add_services'));
-	Router::connect('/admin/services/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_services'));
-	Router::connect('/admin/services/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_services'));
+	Router::connect('/superadmin/services/add', array(
+		'controller' => 'services', 
+		'action'     => 'superadmin_add'
+	));
+	Router::connect('/superadmin/services/list', array(
+		'controller' => 'services', 
+		'action'     => 'superadmin_index'
+	));
+	Router::connect('/superadmin/services/edit/*', array(
+		'controller' => 'services', 
+		'action'     => 'superadmin_edit'
+	));
+	Router::connect('/superadmin/services/delete/*', array(
+		'controller' => 'services', 
+		'action'     => 'superadmin_delete'
+	));
+	
 	Router::connect('/admin/success', array('controller' => 'pages', 'action' => 'display', 'success_page'));	
 	/**
  * ...and connect the rest of 'Pages' controller's URLs.
