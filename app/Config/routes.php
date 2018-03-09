@@ -94,18 +94,6 @@
 		'controller' => 'projects', 
 		'action'     => 'superadmin_project_delete'
 	));
-	Router::connect('/admin/about-us/add', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_add_aboutus'
-	));
-	Router::connect('/admin/about-us/list', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_list_aboutus'
-	));
-	Router::connect('/admin/about-us/edit', array(
-		'controller' => 'pages', 
-		'action'     => 'display', 'admin_edit_aboutus'
-	));
 	Router::connect('/superadmin/alcaldezs/add', array(
 		'controller' => 'alcaldezs', 
 		'action'     => 'superadmin_add'

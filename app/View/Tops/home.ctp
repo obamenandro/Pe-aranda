@@ -20,7 +20,9 @@
         </div>
         <?php foreach($projects as $project): ?>
         <div class="boxes__list">
-			<img class="boxes__list-image" src="<?= h($project['Project']['image']) ?>">
+			<div class="boxes__image-container">
+				<img class="boxes__list-image" src="<?= h($project['Project']['image']) ?>">
+			</div>
 			<h3 class="boxes__list-h3"><?= h($project['Project']['title']) ?></h3>
 			<p class="boxes__list-paragraph"><?= h($project['Project']['description']) ?></p>
 		</div>

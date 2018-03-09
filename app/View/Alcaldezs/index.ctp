@@ -32,7 +32,7 @@
                         <span class="about-us__result"><?= $alcaldez['Alcaldez']['name'] ?></span>
                     </li>
                     <li class="about-us__column">
-                        <span class="about-us__result"><?= $alcaldez['Alcaldez']['year_services'] ?></span>
+                        <span class="about-us__result"><?= $alcaldez['Alcaldez']['year_services'] ?> </span>
                     </li>
                     <li class="about-us__column">
                         <span class="about-us__result"><?= $alcaldez['Alcaldez']['position'] ?></span>
