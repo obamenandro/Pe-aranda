@@ -32,3 +32,4 @@ Thumbs.db
 /app/webroot/node_modules
 /app/webroot/css/style.min.css
 /app/webroot/package-lock.json
+/app/webroot/img/uploads
