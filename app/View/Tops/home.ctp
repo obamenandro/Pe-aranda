@@ -18,37 +18,13 @@
         <div class="boxes__title"> 
             <h2>Mayor's Project</h2>
         </div>
+        <?php foreach($projects as $project): ?>
         <div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/6.jpg">
-			<h3 class="boxes__list-h3">Wheelchairs Giving from DOH</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
+			<img class="boxes__list-image" src="<?= h($project['Project']['image']) ?>">
+			<h3 class="boxes__list-h3"><?= h($project['Project']['title']) ?></h3>
+			<p class="boxes__list-paragraph"><?= h($project['Project']['description']) ?></p>
 		</div>
-		<div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/7.jpg">
-			<h3 class="boxes__list-h3">Water Pumps Giving to Farmers</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
-		</div>
-		<div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/5.jpg">
-			<h3 class="boxes__list-h3">Tractors Giving to Farmers</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
-        </div>
-        
-		<div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/8.jpg">
-			<h3 class="boxes__list-h3">Giving Relief Foods</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
-		</div>
-		<div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/10.jpg">
-			<h3 class="boxes__list-h3">Kasalang Bayan</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
-		</div>
-		<div class="boxes__list">
-			<img class="boxes__list-image" src="/images/events/9.jpg">
-			<h3 class="boxes__list-h3">Patrol Car for Brgy.</h3>
-			<p class="boxes__list-paragraph">i have to do this so they will able to graduate and for the sake of someone lol</p>
-		</div>
+		<?php endforeach; ?>
 	</div>
 </section>
 

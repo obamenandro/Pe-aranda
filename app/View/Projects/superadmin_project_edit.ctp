@@ -1,4 +1,6 @@
 <div class="admin-form">
+
+    <?= $this->Session->flash(); ?>
     <?= $this->Form->create('Project', [
         'type'    => 'POST',
         'enctype' => "multipart/form-data" ,

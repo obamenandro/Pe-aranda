@@ -10,8 +10,11 @@ class TopsController extends AppController {
  *
  * @var mixed
  */
-
+	
 	public function home() {
-		
+		$this->Project = ClassRegistry::init('Project');	
+
+		$projects = $this->Project->find('all');
+		$this->set(compact('projects'));
 	}
 }

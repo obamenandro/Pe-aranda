@@ -15,21 +15,19 @@ class Alcaldez extends AppModel {
 		'name' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+				'message' => 'Alcaldez name is required.',
 			),
 		),
 		'year_services' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
+				'message' => 'Alcaldez year_services is required.',
+			),
+		),
+		'position' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				'message' => 'Alcaldez position is required.',
 			),
 		),
 	);
