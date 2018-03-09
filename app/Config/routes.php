@@ -147,7 +147,10 @@
 		'controller' => 'governments', 
 		'action'     => 'superadmin_edit_councilor'
 	));
-
+	Router::connect('/superadmin/government/delete/*', array(
+		'controller' => 'governments', 
+		'action'     => 'superadmin_delete'
+	));
 	Router::connect('/admin/mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_mayor'));
 	Router::connect('/admin/vice-mayor/edit', array('controller' => 'pages', 'action' => 'display', 'admin_edit_vicemayor'));
 	Router::connect('/admin/government/list', array('controller' => 'pages', 'action' => 'display', 'admin_list_government'));

@@ -1,6 +1,7 @@
 <?php  $this->layout = 'admin'; ?>
 
 <div class="admin-form">
+    <?= $this->Session->flash(); ?>
     <div class="admin-table">
         <table class="admin-table__wrapper">
             <thead>
@@ -24,7 +25,7 @@
                             <a href="/superadmin/<?= Configure::read('position.'.$government['Government']['position']) ?>/edit/<?= $government['Government']['id'] ?>" class="admin-table__link">Edit</a>
                         </div>
                         <div class="admin-table__action">
-                            <a class="admin-table__link admin-table__link--delete">Delete</a>
+                            <a href="javascript:void(0);" class="admin-table__link admin-table__link--delete delete" id="<?= $government['Government']['id'] ?>">Delete</a>
                         </div>
                     </td>
                 </tr>
@@ -55,3 +56,31 @@
         </div>
     </div> 
 </div>
+<div class="modal-confirmation">
+    <div class="modal-confirmation__content">
+        <div class="modal-confirmation__close">
+            <button class="modal-confirmation__close-btn">x</button>
+        </div>
+        <div class="modal-confirmation__header">
+            <span>Confirmation</span>
+        </div>
+        <div class="modal-confirmation__body">
+            <span>Are you sure you want to delete?</span>
+        </div>
+        <div class="modal-confirmation__button">
+            <button class="modal-confirmation__delete-btn submit">Delete</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        var id = "";
+        $('.delete').on('click', function(){
+            id = $(this).attr('id');
+            $('.modal-confirmation').show();
+        });
+        $('.submit').on('click', function() {
+            window.location.href = "/superadmin/government/delete/"+id;
+        });
+    })
+</script>

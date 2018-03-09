@@ -377,4 +377,16 @@ class GovernmentsController extends AppController {
         $governments = $this->Paginator->paginate('Government');
         $this->set(compact('governments'));
     }
+
+    public function superadmin_delete($id) {
+        $this->autoRender = false;
+        $this->Government->id = $id;
+        if ($this->Government->exists()) {
+            $this->Government->delete($id);
+            $this->Session->setFlash(__('Government has been successfully deleted.'), 'success');
+            return $this->redirect('/superadmin/government/lists/');
+        } else {
+            return $this->redirect('/superadmin/government/lists/');
+        }
+    }
 }
